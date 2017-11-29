@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D5E4EE981FCEBE3E00211899 /* LBaseClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBaseClass.h; sourceTree = "<group>"; };
+		D5E4EE9A1FCEC6B000211899 /* LBaseClassHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBaseClassHeader.h; sourceTree = "<group>"; };
 		D5FC202D1FCE9F0C0081AF72 /* LBaseClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBaseClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FC20301FCE9F0C0081AF72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D5FC20311FCE9F0C0081AF72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		D5FC20501FCE9FA00081AF72 /* LBaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				D5E4EE981FCEBE3E00211899 /* LBaseClass.h */,
+				D5E4EE9A1FCEC6B000211899 /* LBaseClassHeader.h */,
 				D5FC20511FCE9FA10081AF72 /* LController */,
 				D5FC20521FCE9FA10081AF72 /* LModel */,
 				D5FC20531FCE9FA10081AF72 /* LView */,
