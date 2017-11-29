@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license               = "MIT"
   s.author                = { "leeqiang250" => "leeqiang250@163.com" }  
   s.source                = { :git => "https://github.com/leeqiang250/LBaseClass.git", :tag => s.version }
-  s.source_files          = "LBaseClass/LBaseClass/LBaseClass**/*.{h,m}"
+  s.source_files          = "LBaseClass/LBaseClass/LBaseClass/**/*.{h,m}"
   s.ios.deployment_target = "9.0"
 
 end
