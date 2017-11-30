@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5AEAFAE1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */; };
+		D5AEAFB61FD03FA400AF2A4C /* LContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEAFB51FD03FA400AF2A4C /* LContext.m */; };
 		D5DE27EC1FCFAE48004BC8F8 /* LTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DE27EB1FCFAE48004BC8F8 /* LTableView.m */; };
 		D5DE27EF1FCFAEC3004BC8F8 /* LTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DE27EE1FCFAEC3004BC8F8 /* LTextField.m */; };
 		D5DE27F21FCFAF23004BC8F8 /* LTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DE27F11FCFAF23004BC8F8 /* LTabBar.m */; };
@@ -34,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D5AEAFAC1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
+		D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
+		D5AEAFB41FD03FA400AF2A4C /* LContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LContext.h; sourceTree = "<group>"; };
+		D5AEAFB51FD03FA400AF2A4C /* LContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LContext.m; sourceTree = "<group>"; };
 		D5DE27E91FCFABEA004BC8F8 /* LBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBaseClass.h; sourceTree = "<group>"; };
 		D5DE27EA1FCFAE48004BC8F8 /* LTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTableView.h; sourceTree = "<group>"; };
 		D5DE27EB1FCFAE48004BC8F8 /* LTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTableView.m; sourceTree = "<group>"; };
@@ -92,6 +98,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D5AEAFAF1FD03C2B00AF2A4C /* LSingleton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LSingleton;
+			sourceTree = "<group>";
+		};
+		D5AEAFB31FD03F9000AF2A4C /* LContext */ = {
+			isa = PBXGroup;
+			children = (
+				D5AEAFB41FD03FA400AF2A4C /* LContext.h */,
+				D5AEAFB51FD03FA400AF2A4C /* LContext.m */,
+			);
+			path = LContext;
+			sourceTree = "<group>";
+		};
 		D5DE27FE1FCFC0FB004BC8F8 /* LProtocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +125,8 @@
 		D5DE28051FCFE65F004BC8F8 /* LCategory */ = {
 			isa = PBXGroup;
 			children = (
+				D5AEAFAC1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.h */,
+				D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */,
 			);
 			path = LCategory;
 			sourceTree = "<group>";
@@ -148,9 +172,11 @@
 			children = (
 				D5DE27E91FCFABEA004BC8F8 /* LBaseClass.h */,
 				D5DE28051FCFE65F004BC8F8 /* LCategory */,
+				D5AEAFB31FD03F9000AF2A4C /* LContext */,
 				D5FC20511FCE9FA10081AF72 /* LController */,
 				D5FC20521FCE9FA10081AF72 /* LModel */,
 				D5DE27FE1FCFC0FB004BC8F8 /* LProtocol */,
+				D5AEAFAF1FD03C2B00AF2A4C /* LSingleton */,
 				D5FC20531FCE9FA10081AF72 /* LView */,
 			);
 			path = LBaseClass;
@@ -291,6 +317,7 @@
 				D5FC20621FCEA0860081AF72 /* LTableViewController.m in Sources */,
 				D5FC205C1FCE9FA10081AF72 /* LView.m in Sources */,
 				D5DE27EC1FCFAE48004BC8F8 /* LTableView.m in Sources */,
+				D5AEAFB61FD03FA400AF2A4C /* LContext.m in Sources */,
 				D5FC20651FCEA0BF0081AF72 /* LTabBarController.m in Sources */,
 				D5FC20401FCE9F0C0081AF72 /* main.m in Sources */,
 				D5DE27F51FCFAF5D004BC8F8 /* LColor.m in Sources */,
@@ -299,6 +326,7 @@
 				D5FC20711FCEA1BE0081AF72 /* LImageView.m in Sources */,
 				D5FC206B1FCEA1930081AF72 /* LObject.m in Sources */,
 				D5FC20321FCE9F0C0081AF72 /* AppDelegate.m in Sources */,
+				D5AEAFAE1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
