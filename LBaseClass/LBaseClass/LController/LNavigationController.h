@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LInitProtocol.h"
 
-@interface LNavigationController : UINavigationController
+@interface LNavigationController : UINavigationController<LInitProtocol>
 
 /**
  *  唯一标识
