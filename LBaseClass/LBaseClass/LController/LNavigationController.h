@@ -10,4 +10,14 @@
 
 @interface LNavigationController : UINavigationController
 
+/**
+ *  唯一标识
+ */
+@property (nonatomic, strong) NSString *uid;
+
+/**
+ *  创建时间
+ */
+@property (nonatomic, assign) NSTimeInterval createTime;
+
 @end

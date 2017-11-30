@@ -29,7 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D5E4EE9A1FCEC6B000211899 /* LBaseClassHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBaseClassHeader.h; sourceTree = "<group>"; };
+		D5DE27E91FCFABEA004BC8F8 /* LBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBaseClass.h; sourceTree = "<group>"; };
 		D5E4EEA21FCEC8DC00211899 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D5E4EEA31FCEC8DC00211899 /* LBaseClass.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LBaseClass.podspec; sourceTree = "<group>"; };
 		D5E4EEA41FCEC8DC00211899 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		D5FC20501FCE9FA00081AF72 /* LBaseClass */ = {
 			isa = PBXGroup;
 			children = (
-				D5E4EE9A1FCEC6B000211899 /* LBaseClassHeader.h */,
+				D5DE27E91FCFABEA004BC8F8 /* LBaseClass.h */,
 				D5FC20511FCE9FA10081AF72 /* LController */,
 				D5FC20521FCE9FA10081AF72 /* LModel */,
 				D5FC20531FCE9FA10081AF72 /* LView */,

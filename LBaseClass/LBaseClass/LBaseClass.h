@@ -1,6 +1,6 @@
 //
-//  LBaseClassHeader.h
-//  LBaseClassHeader
+//  LBaseClass.h
+//  LBaseClass
 //
 //  Created by liqiang on 2017/11/29.
 //  Copyright © 2017年 liqiang. All rights reserved.
@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-#ifndef LBaseClassHeader_h
-    #define LBaseClassHeader_h
+#ifndef LBaseClass_h
+    #define LBaseClass_h
 
     #import "LNavigationController.h"
     #import "LTabBarController.h"
@@ -25,4 +25,4 @@
     #import "LLabel.h"
     #import "LView.h"
 
-#endif /* LBaseClassHeader_h */
+#endif /* LBaseClass_h */
