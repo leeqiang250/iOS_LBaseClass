@@ -6,9 +6,6 @@
 //  Copyright © 2017年 liqiang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <Foundation/Foundation.h>
-
 #ifndef LBaseClass_h
     #define LBaseClass_h
 
