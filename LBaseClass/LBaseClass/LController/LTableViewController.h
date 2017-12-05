@@ -27,11 +27,6 @@
 @property (nonatomic, assign, readonly) NSTimeInterval destroyTime;
 
 /**
- 进入页面时间
- */
-@property (nonatomic, assign, readonly) NSTimeInterval enterTime;
-
-/**
  停留时长
  */
 @property (nonatomic, assign, readonly) NSTimeInterval stayTime;

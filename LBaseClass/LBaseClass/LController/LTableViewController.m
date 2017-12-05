@@ -10,6 +10,11 @@
 
 @interface LTableViewController ()
 
+/**
+ 进入页面时间
+ */
+@property (nonatomic, assign) NSTimeInterval enterTime;
+
 @end
 
 @implementation LTableViewController
@@ -59,7 +64,7 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    _enterTime = [[NSDate date] timeIntervalSince1970];
+    self.enterTime = [[NSDate date] timeIntervalSince1970];
 
     if (self.visibleNavbar) {
         if (self.navigationController && self.navigationController.navigationBar.hidden) {
@@ -86,7 +91,7 @@
     [super viewWillDisappear:animated];
     
     _stayTime += ([[NSDate date] timeIntervalSince1970] - self.enterTime);
-    _enterTime = 0;
+    self.enterTime = 0;
 }
 
 - (void)setVisibleNavbar:(BOOL)visibleNavbar {
@@ -132,7 +137,7 @@
         self.uid = [NSUUID UUID].UUIDString;
         _createTime = [[NSDate date] timeIntervalSince1970];
         _destroyTime = 0;
-        _enterTime = 0;
+        self.enterTime = 0;
         _stayTime = 0;
     });
 }
