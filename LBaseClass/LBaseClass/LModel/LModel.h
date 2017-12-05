@@ -11,22 +11,22 @@
 @interface LModel : LObject
 
 /**
- *  显示排序
+ 显示排序
  */
 @property (nonatomic, strong) NSString *displayOrder;
 
 /**
- *  数据版本号
+ 数据版本号
  */
 @property (nonatomic, strong) NSString *dataVersion;
 
 /**
- *  属性名称集合
+ 属性名称集合
  */
 - (NSMutableSet *)propertyKeys;
 
 /**
- *  属性名称集合
+ 属性名称集合
  */
 + (NSMutableSet *)propertyKeys;
 

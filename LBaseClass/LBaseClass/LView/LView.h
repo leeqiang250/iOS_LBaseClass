@@ -12,13 +12,18 @@
 @interface LView : UIView<LInitProtocol>
 
 /**
- *  唯一标示
+ 唯一标示
  */
 @property (nonatomic, strong) NSString *uid;
 
 /**
- *  创建时间
+ 创建时间
  */
-@property (nonatomic, assign) NSTimeInterval createTime;
+@property (nonatomic, assign, readonly) NSTimeInterval createTime;
+
+/**
+ 销毁时间
+ */
+@property (nonatomic, assign, readonly) NSTimeInterval destroyTime;
 
 @end

@@ -62,7 +62,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         self.uid = [NSUUID UUID].UUIDString;
-        self.createTime = [[NSDate date] timeIntervalSince1970];
+        _createTime = [[NSDate date] timeIntervalSince1970];
     });
 }
 

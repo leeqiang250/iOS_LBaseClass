@@ -59,6 +59,8 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
+    _enterTime = [[NSDate date] timeIntervalSince1970];
+
     if (self.visibleNavbar) {
         if (self.navigationController && self.navigationController.navigationBar.hidden) {
             self.navigationController.navigationBar.hidden = NO;
@@ -78,6 +80,13 @@
             self.tabBarController.tabBar.hidden = YES;
         }
     }
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    _stayTime += ([[NSDate date] timeIntervalSince1970] - self.enterTime);
+    _enterTime = 0;
 }
 
 - (void)setVisibleNavbar:(BOOL)visibleNavbar {
@@ -121,7 +130,10 @@
         self.visibleTabar = NO;
         
         self.uid = [NSUUID UUID].UUIDString;
-        self.createTime = [[NSDate date] timeIntervalSince1970];        
+        _createTime = [[NSDate date] timeIntervalSince1970];
+        _destroyTime = 0;
+        _enterTime = 0;
+        _stayTime = 0;
     });
 }
 
