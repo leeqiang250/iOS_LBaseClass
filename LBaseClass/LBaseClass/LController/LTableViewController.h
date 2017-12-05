@@ -32,6 +32,16 @@
 @property (nonatomic, assign, readonly) NSTimeInterval stayTime;
 
 /**
+ 类名称
+ */
+@property (nonatomic, strong, readonly) NSString *className;
+
+/**
+ 页面统计信息
+ */
+@property (nonatomic, strong, readonly) NSDictionary *statisticsInfo;
+
+/**
  是否显示导航控制器
  */
 @property (nonatomic, assign) BOOL visibleNavbar;

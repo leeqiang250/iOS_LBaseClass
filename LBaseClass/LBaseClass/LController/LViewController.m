@@ -7,6 +7,7 @@
 //
 
 #import "LViewController.h"
+#import <objc/runtime.h>
 
 @interface LViewController ()
 
@@ -86,6 +87,30 @@
     self.enterTime = 0;
 }
 
+- (NSString *)className {
+    return NSStringFromClass([self class]);
+}
+
+- (NSDictionary *)statisticsInfo {
+    unsigned int outCount, i;
+    objc_property_t *properties = class_copyPropertyList([self class], &outCount);
+    NSMutableDictionary *statisticsInfo = [[NSMutableDictionary alloc] initWithCapacity:outCount];
+    
+    for (i = 0; i < outCount; i++) {
+        objc_property_t property = properties[i];
+        NSString *propertyName = [[NSString alloc] initWithCString:property_getName(property) encoding:NSUTF8StringEncoding];
+        
+        id value = [self valueForKey:propertyName];
+        if (![value isEqual:[NSNull null]] && value != nil) {
+            [statisticsInfo setObject:value forKey:propertyName];
+        }
+    }
+    
+    free(properties);
+    
+    return statisticsInfo;
+}
+
 - (void)setVisibleNavbar:(BOOL)visibleNavbar {
     _visibleNavbar = visibleNavbar;
     
@@ -115,6 +140,8 @@
 }
 
 - (void)dealloc {
+    _destroyTime = [[NSDate date] timeIntervalSince1970];
+    
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
