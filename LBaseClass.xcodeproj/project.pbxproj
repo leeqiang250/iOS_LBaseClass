@@ -36,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D540F5451FDFA27A00AECCB7 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		D5AEAFAC1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
 		D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 		D5AEAFB41FD03FA400AF2A4C /* LContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LContext.h; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		D5AEAFAF1FD03C2B00AF2A4C /* LSingleton */ = {
 			isa = PBXGroup;
 			children = (
+				D540F5451FDFA27A00AECCB7 /* Singleton.h */,
 			);
 			path = LSingleton;
 			sourceTree = "<group>";
