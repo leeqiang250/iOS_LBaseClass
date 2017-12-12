@@ -1,9 +1,9 @@
 //
-//  Singleton.h
-//  Package
+//  LSingleton.h
+//  LBaseClass
 //
-//  Created by liqiang on 15/9/2.
-//  Copyright (c) 2015年 liqiang. All rights reserved.
+//  Created by liqiang on 2017/12/12.
+//  Copyright © 2017年 liqiang. All rights reserved.
 //
 
 /**
@@ -13,7 +13,7 @@
  *
  *  @return 类单实例
  */
-#define Singleton_h(name) + (instancetype)shared##name;
+#define LSingleton_h(name) + (instancetype)shared##name;
 
 #if __has_feature(objc_arc) // ARC
 
@@ -24,7 +24,7 @@
  *
  *  @return 类单实例
  */
-#define Singleton_m(name) \
+#define LSingleton_m(name) \
 static id _instance; \
 \
 + (instancetype)allocWithZone:(struct _NSZone *)zone \
@@ -47,11 +47,11 @@ return _instance; \
 \
 + (id)copyWithZone:(struct _NSZone *)zone \
 { \
-    return _instance; \
+return _instance; \
 } \
 \
 + (id)mutableCopyWithZone:(struct _NSZone *)zone{ \
-    return _instance; \
+return _instance; \
 } \
 
 #else // 非ARC
@@ -63,7 +63,7 @@ return _instance; \
  *
  *  @return 类单实例
  */
-#define singleton_m(name) \
+#define lSingleton_m(name) \
 static id _instance; \
 \
 + (id)allocWithZone:(struct _NSZone *)zone \
@@ -110,7 +110,7 @@ return _instance; \
 } \
 \
 + (id)mutableCopyWithZone:(struct _NSZone *)zone{ \
-    return _instance; \
+return _instance; \
 } \
 
 #endif
