@@ -35,6 +35,7 @@
 
 
 //--------------------LSingleton--------------------
+#import "LSingleton.h"
 
 
 //--------------------LView--------------------
@@ -47,5 +48,6 @@
 #import "LTableView.h"
 #import "LTextField.h"
 #import "LView.h"
+
 
 #endif /* LBaseClass_h */
