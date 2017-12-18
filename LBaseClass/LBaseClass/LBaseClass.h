@@ -11,7 +11,7 @@
 
 //--------------------LCategory--------------------
 #import "UIDevice+IdentifierAddition.h"
-
+#import "UIColor+Category.h"
 
 //--------------------LContext--------------------
 #import "LContext.h"
@@ -40,7 +40,6 @@
 
 //--------------------LView--------------------
 #import "LButton.h"
-#import "LColor.h"
 #import "LImageView.h"
 #import "LLabel.h"
 #import "LScrollView.h"
@@ -48,6 +47,6 @@
 #import "LTableView.h"
 #import "LTextField.h"
 #import "LView.h"
-
+#import "LWebView.h"
 
 #endif /* LBaseClass_h */
