@@ -115,6 +115,24 @@
     }
 }
 
+- (void)setNavbarBackgroundColor:(UIColor *)color {
+    if (color && self.navigationController) {
+        self.navigationController.navigationBar.barTintColor = color;
+    }
+}
+
+- (void)setNavbarBackColor:(UIColor *)color {
+    if (color && self.navigationController) {
+        self.navigationController.navigationBar.tintColor = color;
+    }
+}
+
+- (void)setNavbarTitleColor:(UIColor *)color {
+    if (color && self.navigationController) {
+        self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:color};
+    }
+}
+
 - (void)dealloc {
     _destroyTime = [[NSDate date] timeIntervalSince1970];
     

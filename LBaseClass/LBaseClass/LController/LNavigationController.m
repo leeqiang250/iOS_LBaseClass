@@ -69,7 +69,6 @@
 }
 
 - (void)dealloc {
-    
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
@@ -107,6 +106,5 @@
     self.uid = [NSUUID UUID].UUIDString;
     _createTime = [[NSDate date] timeIntervalSince1970];
 }
-
 
 @end

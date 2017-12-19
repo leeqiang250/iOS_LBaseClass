@@ -51,4 +51,19 @@
  */
 @property (nonatomic, assign) BOOL hiddenTabar;
 
+/**
+ 设置导航栏背景颜色
+ */
+- (void)setNavbarBackgroundColor:(UIColor *)color;
+
+/**
+ 设置导航栏返回按钮颜色
+ */
+- (void)setNavbarBackColor:(UIColor *)color;
+
+/**
+ 设置导航栏标题颜色
+ */
+- (void)setNavbarTitleColor:(UIColor *)color;
+
 @end
