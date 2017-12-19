@@ -124,17 +124,14 @@
 #pragma mark - LInitProtocol
 
 - (void)initialize {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        self.hiddenNavbar = NO;
-        self.hiddenTabar = YES;
-        
-        self.uid = [NSUUID UUID].UUIDString;
-        _createTime = [[NSDate date] timeIntervalSince1970];
-        _destroyTime = 0;
-        self.enterTime = 0;
-        _stayTime = 0;
-    });
+    self.hiddenNavbar = NO;
+    self.hiddenTabar = YES;
+    
+    self.uid = [NSUUID UUID].UUIDString;
+    _createTime = [[NSDate date] timeIntervalSince1970];
+    _destroyTime = 0;
+    self.enterTime = 0;
+    _stayTime = 0;
 }
 
 @end
