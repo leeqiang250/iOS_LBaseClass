@@ -15,4 +15,24 @@
  */
 + (UIColor *)randomColor;
 
+/**
+ 获取R值
+ */
+- (CGFloat)getR;
+
+/**
+ 获取G值
+ */
+- (CGFloat)getG;
+
+/**
+ 获取B值
+ */
+- (CGFloat)getB;
+
+/**
+ 获取A值
+ */
+- (CGFloat)getA;
+
 @end
