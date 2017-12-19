@@ -59,24 +59,12 @@
     
     self.enterTime = [[NSDate date] timeIntervalSince1970];
     
-    if (self.visibleNavbar) {
-        if (self.navigationController && self.navigationController.navigationBar.hidden) {
-            self.navigationController.navigationBar.hidden = NO;
-        }
-    } else {
-        if (self.navigationController && !self.navigationController.navigationBar.hidden) {
-            self.navigationController.navigationBar.hidden = YES;
-        }
+    if (self.navigationController && self.hiddenNavbar != self.navigationController.navigationBar.hidden) {
+        self.navigationController.navigationBar.hidden = self.hiddenNavbar;
     }
     
-    if (self.visibleTabar) {
-        if (self.tabBarController && self.tabBarController.tabBar.hidden) {
-            self.tabBarController.tabBar.hidden = NO;
-        }
-    } else {
-        if (self.tabBarController && !self.tabBarController.tabBar.hidden) {
-            self.tabBarController.tabBar.hidden = YES;
-        }
+    if (self.tabBarController && self.hiddenTabar != self.tabBarController.tabBar.hidden) {
+        self.tabBarController.tabBar.hidden = self.hiddenTabar;
     }
 }
 
@@ -111,31 +99,19 @@
     return statisticsInfo;
 }
 
-- (void)setVisibleNavbar:(BOOL)visibleNavbar {
-    _visibleNavbar = visibleNavbar;
+- (void)setHiddenNavbar:(BOOL)hiddenNavbar {
+    _hiddenNavbar = hiddenNavbar;
     
-    if (_visibleNavbar) {
-        if (self.navigationController && self.navigationController.navigationBar.hidden) {
-            self.navigationController.navigationBar.hidden = NO;
-        }
-    } else {
-        if (self.navigationController && !self.navigationController.navigationBar.hidden) {
-            self.navigationController.navigationBar.hidden = YES;
-        }
+    if (self.navigationController && hiddenNavbar != self.navigationController.navigationBar.hidden) {
+        self.navigationController.navigationBar.hidden = hiddenNavbar;
     }
 }
 
-- (void)setVisibleTabar:(BOOL)visibleTabar {
-    _visibleTabar = visibleTabar;
+- (void)setHiddenTabar:(BOOL)hiddenTabar {
+    _hiddenTabar = hiddenTabar;
     
-    if (_visibleTabar) {
-        if (self.tabBarController && self.tabBarController.tabBar.hidden) {
-            self.tabBarController.tabBar.hidden = NO;
-        }
-    } else {
-        if (self.tabBarController && !self.tabBarController.tabBar.hidden) {
-            self.tabBarController.tabBar.hidden = YES;
-        }
+    if (self.tabBarController && hiddenTabar != self.tabBarController.tabBar.hidden) {
+        self.tabBarController.tabBar.hidden = hiddenTabar;
     }
 }
 
@@ -150,8 +126,8 @@
 - (void)initialize {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        self.visibleNavbar = NO;
-        self.visibleTabar = NO;
+        self.hiddenNavbar = NO;
+        self.hiddenTabar = YES;
         
         self.uid = [NSUUID UUID].UUIDString;
         _createTime = [[NSDate date] timeIntervalSince1970];
