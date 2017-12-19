@@ -155,6 +155,8 @@
     self.enterTime = 0;
     _stayTime = 0;
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     [self setNavbarBackgroundColor:[UIColor whiteColor]];
     [self setNavbarBackColor:[UIColor whiteColor]];
     [self setNavbarTitleColor:[UIColor blackColor]];
