@@ -7,6 +7,7 @@
 //
 
 #import "LViewController.h"
+#import "UIColor+Category.h"
 #import <objc/runtime.h>
 
 @interface LViewController ()
@@ -118,6 +119,9 @@
 - (void)setNavbarBackgroundColor:(UIColor *)color {
     if (color && self.navigationController) {
         self.navigationController.navigationBar.barTintColor = color;
+        
+        //自动识别状态栏颜色，根据导航栏背景颜色色系
+        self.navigationController.navigationBar.barStyle = [color isDark] ? UIStatusBarStyleLightContent : UIStatusBarStyleDefault;
     }
 }
 
@@ -150,6 +154,10 @@
     _destroyTime = 0;
     self.enterTime = 0;
     _stayTime = 0;
+    
+    [self setNavbarBackgroundColor:[UIColor whiteColor]];
+    [self setNavbarBackColor:[UIColor whiteColor]];
+    [self setNavbarTitleColor:[UIColor blackColor]];
 }
 
 @end
