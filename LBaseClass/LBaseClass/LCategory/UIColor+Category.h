@@ -35,4 +35,9 @@
  */
 - (CGFloat)getA;
 
+/**
+ 是否是深颜色
+ */
+- (BOOL)isDark;
+
 @end

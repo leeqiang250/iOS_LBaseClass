@@ -10,6 +10,8 @@
 
 @implementation UIColor(Category)
 
+#pragma mark - Interface
+
 + (UIColor *)randomColor {
     return [UIColor colorWithRed:arc4random_uniform(256) / 255.0f green:arc4random_uniform(256) / 255.0f blue:arc4random_uniform(256) / 255.0f alpha:arc4random_uniform(101) / 100.0f];
 }
@@ -54,7 +56,22 @@
     return 0.0f;
 }
 
-
-
+- (BOOL)isDark {
+    size_t numComponents = CGColorGetNumberOfComponents(self.CGColor);
+    if (numComponents == 4) {
+        CGFloat R, G, B;
+        
+        const CGFloat * components = CGColorGetComponents(self.CGColor);
+        R = components[0];
+        G = components[1];
+        B = components[2];
+        
+        CGFloat y = R * 0.299f + G * 0.587f + B * 0.114f;
+        
+        return y < 192.0f;
+    }
+    
+    return NO;
+}
 
 @end
