@@ -52,6 +52,7 @@
     
     self.backgroundColor = [UIColor whiteColor];
     
+    
     //添加点击事件
     [self addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
 }
