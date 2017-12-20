@@ -11,6 +11,10 @@
 		D503884E1FE4CE9E00BA6487 /* LWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D503884D1FE4CE9E00BA6487 /* LWebView.m */; };
 		D5AEAFAE1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */; };
 		D5AEAFB61FD03FA400AF2A4C /* LContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEAFB51FD03FA400AF2A4C /* LContext.m */; };
+		D5DB07381FEA599300A347B1 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DB07371FEA599300A347B1 /* NSString+MD5.m */; };
+		D5DB073B1FEA5A8200A347B1 /* NSString+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DB073A1FEA5A8200A347B1 /* NSString+Hex.m */; };
+		D5DB073F1FEA5C0200A347B1 /* LApp.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DB073E1FEA5C0200A347B1 /* LApp.m */; };
+		D5DB07421FEA619900A347B1 /* NSData+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DB07411FEA619900A347B1 /* NSData+Hex.m */; };
 		D5DE27EC1FCFAE48004BC8F8 /* LTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DE27EB1FCFAE48004BC8F8 /* LTableView.m */; };
 		D5DE27EF1FCFAEC3004BC8F8 /* LTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DE27EE1FCFAEC3004BC8F8 /* LTextField.m */; };
 		D5DE27F21FCFAF23004BC8F8 /* LTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DE27F11FCFAF23004BC8F8 /* LTabBar.m */; };
@@ -47,6 +51,14 @@
 		D5AEAFB41FD03FA400AF2A4C /* LContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LContext.h; sourceTree = "<group>"; };
 		D5AEAFB51FD03FA400AF2A4C /* LContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LContext.m; sourceTree = "<group>"; };
 		D5DB07031FEA152D00A347B1 /* LPropertyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPropertyProtocol.h; sourceTree = "<group>"; };
+		D5DB07361FEA599300A347B1 /* NSString+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		D5DB07371FEA599300A347B1 /* NSString+MD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		D5DB07391FEA5A8200A347B1 /* NSString+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Hex.h"; sourceTree = "<group>"; };
+		D5DB073A1FEA5A8200A347B1 /* NSString+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hex.m"; sourceTree = "<group>"; };
+		D5DB073D1FEA5C0200A347B1 /* LApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LApp.h; sourceTree = "<group>"; };
+		D5DB073E1FEA5C0200A347B1 /* LApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LApp.m; sourceTree = "<group>"; };
+		D5DB07401FEA619900A347B1 /* NSData+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Hex.h"; sourceTree = "<group>"; };
+		D5DB07411FEA619900A347B1 /* NSData+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Hex.m"; sourceTree = "<group>"; };
 		D5DE27E91FCFABEA004BC8F8 /* LBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBaseClass.h; sourceTree = "<group>"; };
 		D5DE27EA1FCFAE48004BC8F8 /* LTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTableView.h; sourceTree = "<group>"; };
 		D5DE27EB1FCFAE48004BC8F8 /* LTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTableView.m; sourceTree = "<group>"; };
@@ -120,6 +132,15 @@
 			path = LContext;
 			sourceTree = "<group>";
 		};
+		D5DB073C1FEA5BF100A347B1 /* LApp */ = {
+			isa = PBXGroup;
+			children = (
+				D5DB073D1FEA5C0200A347B1 /* LApp.h */,
+				D5DB073E1FEA5C0200A347B1 /* LApp.m */,
+			);
+			path = LApp;
+			sourceTree = "<group>";
+		};
 		D5DE27FE1FCFC0FB004BC8F8 /* LProtocol */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,10 +153,16 @@
 		D5DE28051FCFE65F004BC8F8 /* LCategory */ = {
 			isa = PBXGroup;
 			children = (
-				D5AEAFAC1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.h */,
-				D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */,
+				D5DB07401FEA619900A347B1 /* NSData+Hex.h */,
+				D5DB07411FEA619900A347B1 /* NSData+Hex.m */,
+				D5DB07391FEA5A8200A347B1 /* NSString+Hex.h */,
+				D5DB073A1FEA5A8200A347B1 /* NSString+Hex.m */,
+				D5DB07361FEA599300A347B1 /* NSString+MD5.h */,
+				D5DB07371FEA599300A347B1 /* NSString+MD5.m */,
 				D50388471FE3D84A00BA6487 /* UIColor+Category.h */,
 				D50388481FE3D84A00BA6487 /* UIColor+Category.m */,
+				D5AEAFAC1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.h */,
+				D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */,
 			);
 			path = LCategory;
 			sourceTree = "<group>";
@@ -179,6 +206,7 @@
 		D5FC20501FCE9FA00081AF72 /* LBaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				D5DB073C1FEA5BF100A347B1 /* LApp */,
 				D5DE27E91FCFABEA004BC8F8 /* LBaseClass.h */,
 				D5DE28051FCFE65F004BC8F8 /* LCategory */,
 				D5AEAFB31FD03F9000AF2A4C /* LContext */,
@@ -316,10 +344,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5DB073B1FEA5A8200A347B1 /* NSString+Hex.m in Sources */,
 				D503884E1FE4CE9E00BA6487 /* LWebView.m in Sources */,
 				D5FC20681FCEA1680081AF72 /* LNavigationController.m in Sources */,
+				D5DB07421FEA619900A347B1 /* NSData+Hex.m in Sources */,
 				D5FC205A1FCE9FA10081AF72 /* LButton.m in Sources */,
 				D5FC205B1FCE9FA10081AF72 /* LLabel.m in Sources */,
+				D5DB07381FEA599300A347B1 /* NSString+MD5.m in Sources */,
 				D5DE27EF1FCFAEC3004BC8F8 /* LTextField.m in Sources */,
 				D5FC205F1FCE9FFA0081AF72 /* LViewController.m in Sources */,
 				D5FC206E1FCEA1A70081AF72 /* LModel.m in Sources */,
@@ -328,6 +359,7 @@
 				D50388491FE3D84A00BA6487 /* UIColor+Category.m in Sources */,
 				D5FC205C1FCE9FA10081AF72 /* LView.m in Sources */,
 				D5DE27EC1FCFAE48004BC8F8 /* LTableView.m in Sources */,
+				D5DB073F1FEA5C0200A347B1 /* LApp.m in Sources */,
 				D5AEAFB61FD03FA400AF2A4C /* LContext.m in Sources */,
 				D5FC20651FCEA0BF0081AF72 /* LTabBarController.m in Sources */,
 				D5FC20401FCE9F0C0081AF72 /* main.m in Sources */,

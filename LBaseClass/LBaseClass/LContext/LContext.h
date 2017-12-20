@@ -8,22 +8,25 @@
 
 #import <UIKit/UIKit.h>
 #import "LObject.h"
+#import "LSingleton.h"
 
 @interface LContext : LObject
 
-/**
- 获取包ID
- */
-- (NSString *)getBundleIdentifier;
+LSingleton_h(LContext);
 
 /**
- 获取APP版本号
+ 获取顶层Controller
  */
-- (NSString *)getCurrentVersionInBundle;
+- (UIViewController *)getTopController;
 
 /**
- 获取最顶层ViewController
+ presentController
  */
-- (UIViewController *)getTopViewController;
+- (void)presentViewController:(UIViewController *)viewControllerToPresent;
+
+/**
+ presentController
+ */
+- (void)presentViewController:(UIViewController *)viewControllerToPresent animated: (BOOL)flag completion:(void (^ )(void))completion;
 
 @end
