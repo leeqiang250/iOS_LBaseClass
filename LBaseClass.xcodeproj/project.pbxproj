@@ -46,6 +46,7 @@
 		D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 		D5AEAFB41FD03FA400AF2A4C /* LContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LContext.h; sourceTree = "<group>"; };
 		D5AEAFB51FD03FA400AF2A4C /* LContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LContext.m; sourceTree = "<group>"; };
+		D5DB07031FEA152D00A347B1 /* LPropertyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPropertyProtocol.h; sourceTree = "<group>"; };
 		D5DE27E91FCFABEA004BC8F8 /* LBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LBaseClass.h; sourceTree = "<group>"; };
 		D5DE27EA1FCFAE48004BC8F8 /* LTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTableView.h; sourceTree = "<group>"; };
 		D5DE27EB1FCFAE48004BC8F8 /* LTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTableView.m; sourceTree = "<group>"; };
@@ -123,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				D5DE27FF1FCFC118004BC8F8 /* LInitProtocol.h */,
+				D5DB07031FEA152D00A347B1 /* LPropertyProtocol.h */,
 			);
 			path = LProtocol;
 			sourceTree = "<group>";
