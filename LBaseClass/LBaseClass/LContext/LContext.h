@@ -12,21 +12,19 @@
 
 @interface LContext : LObject
 
-LSingleton_h(LContext);
-
 /**
  获取顶层Controller
  */
-- (UIViewController *)getTopController;
++ (UIViewController *)getTopController;
 
 /**
  presentController
  */
-- (void)presentViewController:(UIViewController *)viewControllerToPresent;
++ (void)presentViewController:(UIViewController *)viewControllerToPresent;
 
 /**
  presentController
  */
-- (void)presentViewController:(UIViewController *)viewControllerToPresent animated: (BOOL)flag completion:(void (^ )(void))completion;
++ (void)presentViewController:(UIViewController *)viewControllerToPresent animated: (BOOL)flag completion:(void (^ )(void))completion;
 
 @end

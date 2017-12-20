@@ -12,9 +12,7 @@
 
 #pragma mark - Interface
 
-LSingleton_m(LContext)
-
-- (UIViewController *)getTopController {
++ (UIViewController *)getTopController {
     UIViewController * vc = [UIApplication sharedApplication].keyWindow.rootViewController;
     
     while (YES) {
@@ -36,11 +34,11 @@ LSingleton_m(LContext)
     return vc;
 }
 
-- (void)presentViewController:(UIViewController *)viewControllerToPresent {
++ (void)presentViewController:(UIViewController *)viewControllerToPresent {
     [self presentViewController:viewControllerToPresent animated:YES completion:nil];
 }
 
-- (void)presentViewController:(UIViewController *)viewControllerToPresent animated: (BOOL)flag completion:(void (^ )(void))completion {
++ (void)presentViewController:(UIViewController *)viewControllerToPresent animated: (BOOL)flag completion:(void (^ )(void))completion {
     [[self getTopController] presentViewController:viewControllerToPresent animated:flag completion:completion];
 }
 
