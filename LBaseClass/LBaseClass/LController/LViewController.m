@@ -67,6 +67,10 @@
     if (self.tabBarController && self.hiddenTabar != self.tabBarController.tabBar.hidden) {
         self.tabBarController.tabBar.hidden = self.hiddenTabar;
     }
+    
+    [self setNavbarBackgroundColor:[UIColor whiteColor]];
+    [self setNavbarBackColor:[UIColor whiteColor]];
+    [self setNavbarTitleColor:[UIColor blackColor]];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -156,10 +160,6 @@
     _stayTime = 0;
     
     self.view.backgroundColor = [UIColor whiteColor];
-    
-    [self setNavbarBackgroundColor:[UIColor whiteColor]];
-    [self setNavbarBackColor:[UIColor whiteColor]];
-    [self setNavbarTitleColor:[UIColor blackColor]];
 }
 
 @end
