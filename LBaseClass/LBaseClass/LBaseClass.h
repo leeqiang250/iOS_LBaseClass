@@ -50,6 +50,10 @@
 #import "LSerializableProtocol.h"
 
 
+//--------------------LResource--------------------
+#import "LDefine.h"
+
+
 //--------------------LSingleton--------------------
 #import "LSingleton.h"
 

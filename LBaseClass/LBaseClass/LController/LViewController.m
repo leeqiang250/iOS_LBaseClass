@@ -12,11 +12,6 @@
 
 @interface LViewController ()
 
-/**
- 进入页面时间
- */
-@property (nonatomic, assign) NSTimeInterval enterTime;
-
 @end
 
 @implementation LViewController
@@ -56,9 +51,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    self.enterTime = [[NSDate date] timeIntervalSince1970];
+    [super viewWillAppear:animated];    
     
     if (self.navigationController && self.hiddenNavbar != self.navigationController.navigationBar.hidden) {
         self.navigationController.navigationBar.hidden = self.hiddenNavbar;
@@ -76,12 +69,6 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     
-    _stayTime += ([[NSDate date] timeIntervalSince1970] - self.enterTime);
-    self.enterTime = 0;
-}
-
-- (NSString *)className {
-    return NSStringFromClass([self class]);
 }
 
 - (void)setHiddenNavbar:(BOOL)hiddenNavbar {
@@ -122,8 +109,6 @@
 }
 
 - (void)dealloc {
-    _destroyTime = [[NSDate date] timeIntervalSince1970];
-    
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
@@ -139,9 +124,6 @@
     
     _uid = [NSUUID UUID].UUIDString;
     _createTime = [[NSDate date] timeIntervalSince1970];
-    _destroyTime = 0;
-    self.enterTime = 0;
-    _stayTime = 0;
     
     self.view.backgroundColor = [UIColor whiteColor];
 }

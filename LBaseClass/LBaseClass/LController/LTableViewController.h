@@ -23,21 +23,6 @@
 @property (nonatomic, assign, readonly) NSTimeInterval createTime;
 
 /**
- 销毁时间
- */
-@property (nonatomic, assign, readonly) NSTimeInterval destroyTime;
-
-/**
- 停留时长
- */
-@property (nonatomic, assign, readonly) NSTimeInterval stayTime;
-
-/**
- 类名称
- */
-@property (nonatomic, copy, readonly) NSString * className;
-
-/**
  是否显示导航控制器
  */
 @property (nonatomic, assign) BOOL hiddenNavbar;

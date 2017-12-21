@@ -82,6 +82,7 @@
 		D5E136E51FEB83BC00581313 /* LSerializableProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSerializableProtocol.h; sourceTree = "<group>"; };
 		D5E136E61FEB9D1500581313 /* NSString+Parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Parser.h"; sourceTree = "<group>"; };
 		D5E136E71FEB9D1500581313 /* NSString+Parser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Parser.m"; sourceTree = "<group>"; };
+		D5E136F01FEBB51F00581313 /* LDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDefine.h; sourceTree = "<group>"; };
 		D5E4EEA21FCEC8DC00211899 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D5E4EEA31FCEC8DC00211899 /* LBaseClass.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LBaseClass.podspec; sourceTree = "<group>"; };
 		D5E4EEA41FCEC8DC00211899 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -196,6 +197,14 @@
 			path = LNetwork;
 			sourceTree = "<group>";
 		};
+		D5E136EF1FEBB50700581313 /* LResource */ = {
+			isa = PBXGroup;
+			children = (
+				D5E136F01FEBB51F00581313 /* LDefine.h */,
+			);
+			path = LResource;
+			sourceTree = "<group>";
+		};
 		D5FC20241FCE9F0C0081AF72 = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +252,7 @@
 				D5FC20521FCE9FA10081AF72 /* LModel */,
 				D5E136DC1FEB7E8A00581313 /* LNetwork */,
 				D5DE27FE1FCFC0FB004BC8F8 /* LProtocol */,
+				D5E136EF1FEBB50700581313 /* LResource */,
 				D5AEAFAF1FD03C2B00AF2A4C /* LSingleton */,
 				D5FC20531FCE9FA10081AF72 /* LView */,
 			);
