@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "LInitProtocol.h"
-#import "LPropertyProtocol.h"
+#import "LReflectProtocol.h"
 
-@interface LTableViewController : UITableViewController<LInitProtocol, LPropertyProtocol>
+@interface LTableViewController : UITableViewController<LInitProtocol, LReflectProtocol>
 
 /**
  唯一标识

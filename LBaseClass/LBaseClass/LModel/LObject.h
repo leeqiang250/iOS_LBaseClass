@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "LInitProtocol.h"
-#import "LPropertyProtocol.h"
+#import "LReflectProtocol.h"
+#import "LSerializableProtocol.h"
 
-@interface LObject : NSObject<LInitProtocol, LPropertyProtocol>
+@interface LObject : NSObject<LInitProtocol, LReflectProtocol, LSerializableProtocol>
 
 /**
  唯一标示

@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "LInitProtocol.h"
-#import "LPropertyProtocol.h"
+#import "LReflectProtocol.h"
 
-@interface LNavigationController : UINavigationController<LInitProtocol, LPropertyProtocol>
+@interface LNavigationController : UINavigationController<LInitProtocol, LReflectProtocol>
 
 /**
  唯一标识

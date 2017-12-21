@@ -39,9 +39,15 @@
 #import "LObject.h"
 
 
+//--------------------LNetwork--------------------
+#import "LRequest.h"
+#import "LResponse.h"
+
+
 //--------------------LProtocol--------------------
 #import "LInitProtocol.h"
-#import "LPropertyProtocol.h"
+#import "LReflectProtocol.h"
+#import "LSerializableProtocol.h"
 
 
 //--------------------LSingleton--------------------
@@ -58,5 +64,6 @@
 #import "LTextField.h"
 #import "LView.h"
 #import "LWebView.h"
+
 
 #endif /* LBaseClass_h */

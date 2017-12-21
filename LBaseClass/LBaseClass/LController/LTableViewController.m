@@ -126,7 +126,7 @@
     _stayTime = 0;
 }
 
-#pragma mark - LPropertyProtocol
+#pragma mark - LReflectProtocol
 
 - (NSMutableDictionary *)propertyKeyValues:(BOOL)isIncludeParent {
     NSMutableSet * keys = [self propertyKeys:isIncludeParent];
@@ -172,6 +172,10 @@
     }
     
     return keys.count == 0 ? nil : keys;
+}
+
+- (BOOL)reflect:(NSObject *)obj {
+    return NO;
 }
 
 @end
