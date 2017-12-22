@@ -23,6 +23,7 @@
 		D5E136DF1FEB7EB000581313 /* LRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E136DE1FEB7EB000581313 /* LRequest.m */; };
 		D5E136E21FEB7EBF00581313 /* LResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E136E11FEB7EBF00581313 /* LResponse.m */; };
 		D5E136E81FEB9D1500581313 /* NSString+Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E136E71FEB9D1500581313 /* NSString+Parser.m */; };
+		D5E1372C1FECCF9300581313 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E1372B1FECCF9200581313 /* NSObject+Category.m */; };
 		D5E4EEA51FCEC8DD00211899 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D5E4EEA21FCEC8DC00211899 /* README.md */; };
 		D5E4EEA61FCEC8DD00211899 /* LBaseClass.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D5E4EEA31FCEC8DC00211899 /* LBaseClass.podspec */; };
 		D5E4EEA71FCEC8DD00211899 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D5E4EEA41FCEC8DC00211899 /* LICENSE */; };
@@ -83,6 +84,8 @@
 		D5E136E61FEB9D1500581313 /* NSString+Parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Parser.h"; sourceTree = "<group>"; };
 		D5E136E71FEB9D1500581313 /* NSString+Parser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Parser.m"; sourceTree = "<group>"; };
 		D5E136F01FEBB51F00581313 /* LDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDefine.h; sourceTree = "<group>"; };
+		D5E1372A1FECCF9200581313 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
+		D5E1372B1FECCF9200581313 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
 		D5E4EEA21FCEC8DC00211899 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D5E4EEA31FCEC8DC00211899 /* LBaseClass.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LBaseClass.podspec; sourceTree = "<group>"; };
 		D5E4EEA41FCEC8DC00211899 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -170,18 +173,20 @@
 			children = (
 				D5DB07401FEA619900A347B1 /* NSData+Hex.h */,
 				D5DB07411FEA619900A347B1 /* NSData+Hex.m */,
+				D5E1372A1FECCF9200581313 /* NSObject+Category.h */,
+				D5E1372B1FECCF9200581313 /* NSObject+Category.m */,
 				D5DB07391FEA5A8200A347B1 /* NSString+Hex.h */,
 				D5DB073A1FEA5A8200A347B1 /* NSString+Hex.m */,
 				D5DB07361FEA599300A347B1 /* NSString+MD5.h */,
 				D5DB07371FEA599300A347B1 /* NSString+MD5.m */,
+				D5E136E61FEB9D1500581313 /* NSString+Parser.h */,
+				D5E136E71FEB9D1500581313 /* NSString+Parser.m */,
 				D50388471FE3D84A00BA6487 /* UIColor+Category.h */,
 				D50388481FE3D84A00BA6487 /* UIColor+Category.m */,
 				D5AEAFAC1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.h */,
 				D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */,
 				D5E136D61FEB5B5800581313 /* UIViewController+Category.h */,
 				D5E136D71FEB5B5800581313 /* UIViewController+Category.m */,
-				D5E136E61FEB9D1500581313 /* NSString+Parser.h */,
-				D5E136E71FEB9D1500581313 /* NSString+Parser.m */,
 			);
 			path = LCategory;
 			sourceTree = "<group>";
@@ -401,6 +406,7 @@
 				D50388491FE3D84A00BA6487 /* UIColor+Category.m in Sources */,
 				D5FC205C1FCE9FA10081AF72 /* LView.m in Sources */,
 				D5DE27EC1FCFAE48004BC8F8 /* LTableView.m in Sources */,
+				D5E1372C1FECCF9300581313 /* NSObject+Category.m in Sources */,
 				D5DB073F1FEA5C0200A347B1 /* LApp.m in Sources */,
 				D5AEAFB61FD03FA400AF2A4C /* LContext.m in Sources */,
 				D5FC20651FCEA0BF0081AF72 /* LTabBarController.m in Sources */,
