@@ -48,11 +48,11 @@
 }
 
 + (void)present:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)(void))completion {
-    [[UIViewController getTopController] present:vc animated:YES completion:completion];
+    [[UIViewController getTopController] presentViewController:vc animated:animated completion:completion];
 }
 
-- (void)present:(UIViewController *)vc animated:(BOOL)animated completion:(void (^ )(void))completion {
-    [[UIViewController getTopController] present:vc animated:YES completion:completion];
+- (void)present:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)(void))completion {
+    [[UIViewController getTopController] presentViewController:vc animated:animated completion:completion];
 }
 
 - (void)push:(UIViewController *)vc {

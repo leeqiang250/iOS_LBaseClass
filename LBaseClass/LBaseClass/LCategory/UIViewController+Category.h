@@ -33,12 +33,12 @@
 /**
  presentVC
  */
-+ (void)present:(UIViewController *)vc animated:(BOOL)animated completion:(void (^ )(void))completion;
++ (void)present:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)(void))completion;
 
 /**
  presentVC
  */
-- (void)present:(UIViewController *)vc animated:(BOOL)animated completion:(void (^ )(void))completion;
+- (void)present:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)(void))completion;
 
 /**
  pushVC

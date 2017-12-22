@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = "LBaseClass"
-    s.version               = "1.0.38"
+    s.version               = "1.0.39"
     s.summary               = "summary of LBaseClass"
     s.description           = "description of LBaseClass"
     s.homepage              = "https://github.com/leeqiang250/iOS_LBaseClass"
