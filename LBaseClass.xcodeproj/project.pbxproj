@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		538654DBF0DD4FE11024790C /* libPods-LBaseClass.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C11483D60C8FB0C55F3129F7 /* libPods-LBaseClass.a */; };
 		D50388491FE3D84A00BA6487 /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D50388481FE3D84A00BA6487 /* UIColor+Category.m */; };
 		D503884E1FE4CE9E00BA6487 /* LWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D503884D1FE4CE9E00BA6487 /* LWebView.m */; };
 		D5AEAFAE1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */; };
@@ -24,6 +25,14 @@
 		D5E136E21FEB7EBF00581313 /* LResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E136E11FEB7EBF00581313 /* LResponse.m */; };
 		D5E136E81FEB9D1500581313 /* NSString+Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E136E71FEB9D1500581313 /* NSString+Parser.m */; };
 		D5E1372C1FECCF9300581313 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E1372B1FECCF9200581313 /* NSObject+Category.m */; };
+		D5E1372E1FECE5FD00581313 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E1372D1FECE5FC00581313 /* CoreGraphics.framework */; };
+		D5E137301FECE60400581313 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E1372F1FECE60400581313 /* Foundation.framework */; };
+		D5E137321FECE60C00581313 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E137311FECE60C00581313 /* ImageIO.framework */; };
+		D5E137341FECE61400581313 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E137331FECE61400581313 /* MobileCoreServices.framework */; };
+		D5E137361FECE61B00581313 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E137351FECE61A00581313 /* QuartzCore.framework */; };
+		D5E137381FECE62100581313 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E137371FECE62100581313 /* Security.framework */; };
+		D5E1373A1FECE62800581313 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E137391FECE62800581313 /* SystemConfiguration.framework */; };
+		D5E1373C1FECE63100581313 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5E1373B1FECE63100581313 /* UIKit.framework */; };
 		D5E4EEA51FCEC8DD00211899 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D5E4EEA21FCEC8DC00211899 /* README.md */; };
 		D5E4EEA61FCEC8DD00211899 /* LBaseClass.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D5E4EEA31FCEC8DC00211899 /* LBaseClass.podspec */; };
 		D5E4EEA71FCEC8DD00211899 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D5E4EEA41FCEC8DC00211899 /* LICENSE */; };
@@ -46,6 +55,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B0EB3550809DCC4FE8BD895D /* Pods-LBaseClass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBaseClass.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBaseClass/Pods-LBaseClass.release.xcconfig"; sourceTree = "<group>"; };
+		C11483D60C8FB0C55F3129F7 /* libPods-LBaseClass.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LBaseClass.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50388471FE3D84A00BA6487 /* UIColor+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
 		D50388481FE3D84A00BA6487 /* UIColor+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
 		D503884C1FE4CE9E00BA6487 /* LWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWebView.h; sourceTree = "<group>"; };
@@ -86,6 +97,14 @@
 		D5E136F01FEBB51F00581313 /* LDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDefine.h; sourceTree = "<group>"; };
 		D5E1372A1FECCF9200581313 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
 		D5E1372B1FECCF9200581313 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
+		D5E1372D1FECE5FC00581313 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D5E1372F1FECE60400581313 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D5E137311FECE60C00581313 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		D5E137331FECE61400581313 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D5E137351FECE61A00581313 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D5E137371FECE62100581313 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D5E137391FECE62800581313 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D5E1373B1FECE63100581313 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D5E4EEA21FCEC8DC00211899 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D5E4EEA31FCEC8DC00211899 /* LBaseClass.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LBaseClass.podspec; sourceTree = "<group>"; };
 		D5E4EEA41FCEC8DC00211899 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -119,6 +138,7 @@
 		D5FC206D1FCEA1A70081AF72 /* LModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LModel.m; sourceTree = "<group>"; };
 		D5FC206F1FCEA1BE0081AF72 /* LImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LImageView.h; sourceTree = "<group>"; };
 		D5FC20701FCEA1BE0081AF72 /* LImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LImageView.m; sourceTree = "<group>"; };
+		E8EEC17AAA58C7D7E79604B4 /* Pods-LBaseClass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBaseClass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBaseClass/Pods-LBaseClass.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,12 +146,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E1373C1FECE63100581313 /* UIKit.framework in Frameworks */,
+				D5E1373A1FECE62800581313 /* SystemConfiguration.framework in Frameworks */,
+				D5E137381FECE62100581313 /* Security.framework in Frameworks */,
+				D5E137361FECE61B00581313 /* QuartzCore.framework in Frameworks */,
+				D5E137341FECE61400581313 /* MobileCoreServices.framework in Frameworks */,
+				D5E137321FECE60C00581313 /* ImageIO.framework in Frameworks */,
+				D5E137301FECE60400581313 /* Foundation.framework in Frameworks */,
+				D5E1372E1FECE5FD00581313 /* CoreGraphics.framework in Frameworks */,
+				538654DBF0DD4FE11024790C /* libPods-LBaseClass.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38CBAD5F8F2EBC3F574AA8BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5E1372D1FECE5FC00581313 /* CoreGraphics.framework */,
+				D5E1372F1FECE60400581313 /* Foundation.framework */,
+				D5E137311FECE60C00581313 /* ImageIO.framework */,
+				C11483D60C8FB0C55F3129F7 /* libPods-LBaseClass.a */,
+				D5E137331FECE61400581313 /* MobileCoreServices.framework */,
+				D5E137351FECE61A00581313 /* QuartzCore.framework */,
+				D5E137371FECE62100581313 /* Security.framework */,
+				D5E137391FECE62800581313 /* SystemConfiguration.framework */,
+				D5E1373B1FECE63100581313 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D34667850A5B90AC99D8480 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8EEC17AAA58C7D7E79604B4 /* Pods-LBaseClass.debug.xcconfig */,
+				B0EB3550809DCC4FE8BD895D /* Pods-LBaseClass.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D5AEAFAF1FD03C2B00AF2A4C /* LSingleton */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,9 +267,11 @@
 		D5FC20241FCE9F0C0081AF72 = {
 			isa = PBXGroup;
 			children = (
+				38CBAD5F8F2EBC3F574AA8BA /* Frameworks */,
 				D5FC202F1FCE9F0C0081AF72 /* LBaseClass */,
 				D5E4EEA31FCEC8DC00211899 /* LBaseClass.podspec */,
 				D5E4EEA41FCEC8DC00211899 /* LICENSE */,
+				6D34667850A5B90AC99D8480 /* Pods */,
 				D5FC202E1FCE9F0C0081AF72 /* Products */,
 				D5E4EEA21FCEC8DC00211899 /* README.md */,
 			);
@@ -322,9 +378,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5FC20431FCE9F0C0081AF72 /* Build configuration list for PBXNativeTarget "LBaseClass" */;
 			buildPhases = (
+				E6D100C78BD8E3A47976511B /* [CP] Check Pods Manifest.lock */,
 				D5FC20291FCE9F0C0081AF72 /* Sources */,
 				D5FC202A1FCE9F0C0081AF72 /* Frameworks */,
 				D5FC202B1FCE9F0C0081AF72 /* Resources */,
+				617E212FE8D7E0DF7D7F839E /* [CP] Embed Pods Frameworks */,
+				BBB532684D8E5247365CAC56 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -383,6 +442,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		617E212FE8D7E0DF7D7F839E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LBaseClass/Pods-LBaseClass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBB532684D8E5247365CAC56 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LBaseClass/Pods-LBaseClass-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LBaseClass/Pods-LBaseClass-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6D100C78BD8E3A47976511B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LBaseClass-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5FC20291FCE9F0C0081AF72 /* Sources */ = {
@@ -550,6 +663,7 @@
 		};
 		D5FC20441FCE9F0C0081AF72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8EEC17AAA58C7D7E79604B4 /* Pods-LBaseClass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -565,6 +679,7 @@
 		};
 		D5FC20451FCE9F0C0081AF72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0EB3550809DCC4FE8BD895D /* Pods-LBaseClass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
