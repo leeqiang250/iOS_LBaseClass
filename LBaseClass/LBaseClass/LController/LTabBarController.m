@@ -7,6 +7,7 @@
 //
 
 #import "LTabBarController.h"
+#import "LDefine.h"
 #import <objc/runtime.h>
 
 @interface LTabBarController ()
@@ -49,10 +50,6 @@
     [super didReceiveMemoryWarning];
 }
 
-- (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
-}
-
 - (BOOL)shouldAutorotate {
     return self.selectedViewController.shouldAutorotate;
 }
@@ -79,6 +76,16 @@
 
 - (UIStatusBarAnimation)preferredStatusBarUpdateAnimation {
     return self.selectedViewController.preferredStatusBarUpdateAnimation;
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"uid:%@__createTime:%f", self.uid, self.createTime];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    debugDescription();
 }
 
 #pragma mark - LInitProtocol

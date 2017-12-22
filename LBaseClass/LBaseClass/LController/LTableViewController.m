@@ -7,6 +7,7 @@
 //
 
 #import "LTableViewController.h"
+#import "LDefine.h"
 #import <objc/runtime.h>
 
 @implementation LTableViewController
@@ -86,8 +87,14 @@
     }
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"uid:%@__createTime:%f", self.uid, self.createTime];
+}
+
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    debugDescription();
 }
 
 #pragma mark - LInitProtocol

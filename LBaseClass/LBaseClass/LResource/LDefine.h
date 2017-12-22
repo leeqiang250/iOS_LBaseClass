@@ -12,15 +12,15 @@
 
 #ifdef DEBUG
 
-#define debugLog(...)    NSLog(__VA_ARGS__)
-#define debugMethod()    NSLog(@"%s", __func__)
-#define debugError()     NSLog(@"Error at %s Line:%d", __func__, __LINE__)
+#define debugLog(...)          NSLog(__VA_ARGS__);
+#define debugMethod()          NSLog(@"__Class:%@__Function:%s", self.class, __FUNCTION__);
+#define debugDescription()     NSLog(@"__Class:%@__Function:%s__Line:%d__Description:%@", self.class, __FUNCTION__, __LINE__, self.description);
 
 #else
 
 #define debugLog(...)
 #define debugMethod()
-#define debugError()
+#define debugDescription()
 
 #endif
 

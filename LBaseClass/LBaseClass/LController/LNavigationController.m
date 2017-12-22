@@ -8,6 +8,7 @@
 
 #import "LNavigationController.h"
 #import <objc/runtime.h>
+#import "LDefine.h"
 
 @interface LNavigationController ()
 
@@ -65,10 +66,6 @@
     [super didReceiveMemoryWarning];
 }
 
-- (NSString *)description {
-    return [super description];
-}
-
 - (BOOL)shouldAutorotate {
     return self.topViewController.shouldAutorotate;
 }
@@ -97,8 +94,14 @@
     return self.topViewController.preferredStatusBarUpdateAnimation;
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"uid:%@__createTime:%f", self.uid, self.createTime];
+}
+
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    debugDescription();
 }
 
 #pragma mark - LInitProtocol
