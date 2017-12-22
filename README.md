@@ -3,7 +3,7 @@ iOS重写基类
 
 
 #一、修改后发布到服务器的命令
-pod lib lint LBaseClass.podspec
+pod lib lint --allow-warnings LBaseClass.podspec
 git tag 'X.X.X'
 git push --tags
 pod trunk push LBaseClass.podspec
