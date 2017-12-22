@@ -57,21 +57,7 @@
     _uid = [NSUUID UUID].UUIDString;
     _createTime = [[NSDate date] timeIntervalSince1970];
     
-    self.backgroundColor = [UIColor whiteColor];
-    
-    
-    //添加点击事件
-    [self addTarget:self action:@selector(click:) forControlEvents:UIControlEventTouchUpInside];
-}
-
-/**
- 点击事件
- */
-- (void)click:(LButton *)sender {
-    if (self.clickBlock) {
-        __weak typeof(self) weakSelf = self;
-        self.clickBlock(weakSelf);
-    }
+    self.backgroundColor = [UIColor whiteColor];    
 }
 
 @end
