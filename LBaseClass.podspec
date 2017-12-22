@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = "LBaseClass"
-    s.version               = "1.0.36"
+    s.version               = "1.0.37"
     s.summary               = "summary of LBaseClass"
     s.description           = "description of LBaseClass"
     s.homepage              = "https://github.com/leeqiang250/iOS_LBaseClass"
@@ -19,6 +19,4 @@ Pod::Spec.new do |s|
     s.dependency            'MJExtension'
     s.dependency            'MBProgressHUD'
     s.dependency            'ReactiveObjC'
-    s.dependency            'SDWebImage'
-    s.dependency            'SDWebImage'
 end
