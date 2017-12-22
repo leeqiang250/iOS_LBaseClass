@@ -11,6 +11,14 @@ Pod::Spec.new do |s|
     s.source                = { :git => "https://github.com/leeqiang250/iOS_LBaseClass.git", :tag => s.version }
     s.source_files          = "LBaseClass/LBaseClass/**/*.{h,m}"
     s.requires_arc          = true
-    s.dependencies          = 'SDWebImage/AFNetworking/Masonry/MJRefresh/MJExtension/MBProgressHUD/ReactiveObjC'
     s.frameworks            = 'CoreGraphics', 'Foundation', 'ImageIO', 'MobileCoreServices', 'QuartzCore', 'Security', 'SystemConfiguration', 'UIKit'
+    s.dependency            'SDWebImage'
+    s.dependency            'AFNetworking'
+    s.dependency            'Masonry'
+    s.dependency            'MJRefresh'
+    s.dependency            'MJExtension'
+    s.dependency            'MBProgressHUD'
+    s.dependency            'ReactiveObjC'
+    s.dependency            'SDWebImage'
+    s.dependency            'SDWebImage'
 end

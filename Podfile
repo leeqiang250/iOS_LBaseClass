@@ -6,5 +6,5 @@ target 'LBaseClass' do
     pod 'MJRefresh'
     pod 'MJExtension'
     pod 'MBProgressHUD'
-    pod 'ReactiveObjC'    
+    pod 'ReactiveObjC'
 end
