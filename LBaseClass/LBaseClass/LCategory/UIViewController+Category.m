@@ -77,4 +77,12 @@
     }
 }
 
+- (void)dismiss {
+    [self dismiss:YES completion:nil];
+}
+
+- (void)dismiss:(BOOL)animated completion:(void (^)(void))completion {
+    [self dismissViewControllerAnimated:animated completion:completion];
+}
+
 @end
