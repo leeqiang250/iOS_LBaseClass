@@ -53,8 +53,18 @@ typedef enum : NSUInteger {
 @property (nonatomic, copy) NSString * deviceIdentifier;
 
 /**
- 相应类
+ 响应类
  */
 @property (nonatomic, assign) Class responseClass;
+
+/**
+ 是否缓存
+ */
+@property (nonatomic, assign) BOOL isCache;
+
+/**
+ 
+ */
+@property (nonatomic, assign) NSTimeInterval cacheInterval;
 
 @end

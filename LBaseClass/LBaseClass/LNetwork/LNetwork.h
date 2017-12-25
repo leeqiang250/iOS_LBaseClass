@@ -13,6 +13,9 @@ typedef void(^LRequestBlock) (LRequest * request, LResponse * response);
 
 @interface LNetwork : LObject
 
+/**
+ 发送请求
+ */
 + (void)request:(LRequest *)request block:(LRequestBlock)block;
 
 @end

@@ -24,7 +24,7 @@
     AFHTTPSessionManager * manager = [AFHTTPSessionManager manager];
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    manager.requestSerializer.timeoutInterval = 30;
+    manager.requestSerializer.timeoutInterval = request.timeoutInterval;
     
     if (request.method == HttpMethodGet) {
         [manager GET:request.url parameters:request.getParameter progress:^(NSProgress * downloadProgress) {

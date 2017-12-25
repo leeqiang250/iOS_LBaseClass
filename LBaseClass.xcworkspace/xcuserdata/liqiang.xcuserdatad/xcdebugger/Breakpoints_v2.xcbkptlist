@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LBaseClass/LBaseClass/LView/LView.m"
-            timestampString = "535870153.40419"
+            timestampString = "535873050.740045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -25,235 +25,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LBaseClass/LBaseClass/LNetwork/LNetwork.m"
-            timestampString = "535870153.404269"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "+request:block:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__26+[LNetwork request:block:]_block_invoke"
-                  moduleName = "LBaseClass"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LNetwork/LNetwork.m"
-                  timestampString = "535870153.56228"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__26+[LNetwork request:block:]_block_invoke_2"
-                  moduleName = "LBaseClass"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LNetwork/LNetwork.m"
-                  timestampString = "535870153.565325"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "80">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LBaseClass/LBaseClass/LNetwork/LNetwork.m"
-            timestampString = "535870153.404776"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "+request:block:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "+[LNetwork request:block:]"
-                  moduleName = "LBaseClass"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LNetwork/LNetwork.m"
-                  timestampString = "535870153.5815"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "764">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__26+[LNetwork request:block:]_block_invoke_2"
-                  moduleName = "LBaseClass"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LNetwork/LNetwork.m"
-                  timestampString = "535870153.584889"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "80">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__26+[LNetwork request:block:]_block_invoke_3"
-                  moduleName = "LBaseClass"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LNetwork/LNetwork.m"
-                  timestampString = "535870153.587584"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LBaseClass/LBaseClass/LNetwork/LNetwork.m"
-            timestampString = "535870153.405177"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "+request:block:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__26+[LNetwork request:block:]_block_invoke_3"
-                  moduleName = "LBaseClass"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LNetwork/LNetwork.m"
-                  timestampString = "535870153.595852"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "208">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__copy_helper_block_"
-                  moduleName = "LBaseClass"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LNetwork/LNetwork.m"
-                  timestampString = "535870153.597935"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_"
-                  moduleName = "LBaseClass"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LNetwork/LNetwork.m"
-                  timestampString = "535870153.600967"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LBaseClass/LBaseClass/LNetwork/LNetwork.m"
-            timestampString = "535870153.405539"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "+request:block:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "+[LNetwork request:block:]"
-                  moduleName = "LBaseClass"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LNetwork/LNetwork.m"
-                  timestampString = "535870153.607141"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "33"
-                  endingLineNumber = "33"
-                  offsetFromSymbolStart = "656">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__26+[LNetwork request:block:]_block_invoke"
-                  moduleName = "LBaseClass"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LNetwork/LNetwork.m"
-                  timestampString = "535870153.609101"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "LBaseClass/LBaseClass/LNetwork/LRequest.m"
-            timestampString = "535870153.405902"
+            timestampString = "535873050.740596"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "-getQuery"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-getParameter"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LBaseClass/LBaseClass/LModel/LObject.m"
+            timestampString = "535873108.495651"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "+propertyKeys:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

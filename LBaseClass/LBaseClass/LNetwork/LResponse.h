@@ -10,8 +10,14 @@
 
 @interface LResponse : LModel
 
+/**
+ 请求状态
+ */
 @property (nonatomic, assign) BOOL status;
 
+/**
+ 返回消息
+ */
 @property (nonatomic, copy) NSString * msg;
 
 @end
