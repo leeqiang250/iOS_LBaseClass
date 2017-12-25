@@ -58,9 +58,9 @@
         
         _uid = [NSUUID UUID].UUIDString;
         _createTime = [[NSDate date] timeIntervalSince1970];
-        
-        self.backgroundColor = [UIColor whiteColor];
     });
+    
+    self.backgroundColor = [UIColor whiteColor];
 }
 
 @end
