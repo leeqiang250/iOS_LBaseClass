@@ -28,6 +28,8 @@
     self.buildVersion = [LApp CFBundleVersion];
     self.deviceIdentifier = [[UIDevice currentDevice] uniqueDeviceIdentifier];
     self.responseClass = LResponse.class;
+    self.isCache = NO;
+    self.cacheInterval = 60 * 60 * 24;
 }
 
 #pragma mark - LSerializableProtocol
@@ -59,6 +61,8 @@
     [keyValues removeObjectForKey:@"method"];
     [keyValues removeObjectForKey:@"timeoutInterval"];
     [keyValues removeObjectForKey:@"responseClass"];
+    [keyValues removeObjectForKey:@"isCache"];
+    [keyValues removeObjectForKey:@"cacheInterval"];
     
     return keyValues;
 }
