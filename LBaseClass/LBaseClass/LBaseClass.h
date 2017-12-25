@@ -87,7 +87,7 @@
 #import <AFNetworking/AFNetworking.h>
 #import <Masonry/Masonry.h>
 #import <MBProgressHUD/MBProgressHUD.h>
-#import <MJRefresh/MJRefresh.h>
+#import <MJExtension/MJExtension.h>
 #import <MJRefresh/MJRefresh.h>
 #import <ReactiveObjC/ReactiveObjC.h>
 #import <SDWebImage/SDImageCache.h>
