@@ -37,7 +37,6 @@
 #import "LTabBarController.h"
 #import "LTableViewController.h"
 #import "LViewController.h"
-#import "LViewController.h"
 
 
 //--------------------LDao--------------------
