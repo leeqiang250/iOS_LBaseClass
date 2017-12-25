@@ -134,7 +134,7 @@
 }
 
 + (NSMutableSet *)propertyKeys:(BOOL)isIncludeParent {
-    NSMutableSet * keys = [NSMutableSet new];
+    NSMutableSet * keys = [[NSMutableSet alloc] init];
     Class aClass = self;
     
     while (YES) {
