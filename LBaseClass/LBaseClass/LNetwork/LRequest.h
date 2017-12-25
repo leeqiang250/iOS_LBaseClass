@@ -7,6 +7,7 @@
 //
 
 #import "LModel.h"
+#import "LResponse.h"
 
 typedef enum : NSUInteger {
     HttpMethodGet,//GET
@@ -50,5 +51,10 @@ typedef enum : NSUInteger {
  设备序列号
  */
 @property (nonatomic, copy) NSString * deviceIdentifier;
+
+/**
+ 相应类
+ */
+@property (nonatomic, assign) Class responseClass;
 
 @end

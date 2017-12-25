@@ -27,6 +27,9 @@
     self.releaseVersion = [LApp CFBundleShortVersionString];
     self.buildVersion = [LApp CFBundleVersion];
     self.deviceIdentifier = [[UIDevice currentDevice] uniqueDeviceIdentifier];
+    self.responseClass = LResponse.class;
+    
+    self.url = @"http://www.suizhi.com/DRM/client/product/verifyAppVersion";
 }
 
 #pragma mark - LSerializableProtocol
@@ -50,13 +53,34 @@
 
 - (NSMutableDictionary *)getParameter {
     NSMutableDictionary * keyValues = [self propertyKeyValues:YES];
+    
+    
+    
+    
+    
+    [keyValues removeAllObjects];
+    [keyValues setObject:@"ios" forKey:@"device"];
+    [keyValues setObject:@"3.0.2" forKey:@"app_version"];
+    [keyValues setObject:@"SuiZhi_for_iOS" forKey:@"application_name"];
+    [keyValues setObject:@"718d79a2269955f5252befbe8238bc9e9f6a1a6d" forKey:@"IMEI"];
+    [keyValues setObject:@"wx1463726184162" forKey:@"username"];
+    [keyValues setObject:@"d6ebab7b63170ce1f213f9395edc19c6" forKey:@"token"];
+    if (keyValues) {
+        return keyValues;
+    }
+    
+    
+    
+    
+    
     NSMutableSet * removeKeys = [LModel propertyKeys:YES];
     [keyValues removeObjectsForKeys:removeKeys.allObjects];
 
     [keyValues removeObjectForKey:@"url"];
     [keyValues removeObjectForKey:@"method"];
     [keyValues removeObjectForKey:@"timeoutInterval"];
-
+    [keyValues removeObjectForKey:@"responseClass"];
+    
     return keyValues;
 }
 

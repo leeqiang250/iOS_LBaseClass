@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LNetwork.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    LRequest * re = [[LRequest alloc] init];
+    
+    [LNetwork request:re block:^(LRequest * request, LResponse * response) {
+        
+    }];
     
     return YES;
 }

@@ -84,7 +84,7 @@
         
         free(properties);
         
-        if (!isIncludeParent || aClass == nil || aClass == [NSObject class]) {
+        if (!isIncludeParent || aClass == nil || aClass == [LObject class]) {
             break;
         }
         

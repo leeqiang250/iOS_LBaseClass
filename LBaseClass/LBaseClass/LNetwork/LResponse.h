@@ -10,4 +10,8 @@
 
 @interface LResponse : LModel
 
+@property (nonatomic, assign) BOOL status;
+
+@property (nonatomic, copy) NSString * msg;
+
 @end
