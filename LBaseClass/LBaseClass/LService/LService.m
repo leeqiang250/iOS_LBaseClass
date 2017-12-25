@@ -12,4 +12,8 @@
 
 #pragma mark - LServiceProtocol
 
+- (void)f {
+    
+}
+
 @end
