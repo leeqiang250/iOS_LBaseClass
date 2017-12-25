@@ -7,7 +7,7 @@
 //
 
 #import "LNetwork.h"
-#import <AFNetworking.h>
+#import <AFNetworking/AFNetworking.h>
 
 @implementation LNetwork
 
