@@ -10,7 +10,6 @@
 		538654DBF0DD4FE11024790C /* libPods-LBaseClass.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C11483D60C8FB0C55F3129F7 /* libPods-LBaseClass.a */; };
 		D50388491FE3D84A00BA6487 /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D50388481FE3D84A00BA6487 /* UIColor+Category.m */; };
 		D503884E1FE4CE9E00BA6487 /* LWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D503884D1FE4CE9E00BA6487 /* LWebView.m */; };
-		D544834E1FED141800D2F681 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = D544834D1FED141800D2F681 /* test.m */; };
 		D54894711FF0945100F2019B /* LCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D54894701FF0945100F2019B /* LCache.m */; };
 		D54894741FF0945E00F2019B /* LDao.m in Sources */ = {isa = PBXBuildFile; fileRef = D54894731FF0945E00F2019B /* LDao.m */; };
 		D54894771FF0946B00F2019B /* LService.m in Sources */ = {isa = PBXBuildFile; fileRef = D54894761FF0946B00F2019B /* LService.m */; };
@@ -67,8 +66,6 @@
 		D503884C1FE4CE9E00BA6487 /* LWebView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWebView.h; sourceTree = "<group>"; };
 		D503884D1FE4CE9E00BA6487 /* LWebView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWebView.m; sourceTree = "<group>"; };
 		D540F5471FDFA57400AECCB7 /* LSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSingleton.h; sourceTree = "<group>"; };
-		D544834C1FED141800D2F681 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
-		D544834D1FED141800D2F681 /* test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 		D548946F1FF0945100F2019B /* LCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCache.h; sourceTree = "<group>"; };
 		D54894701FF0945100F2019B /* LCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCache.m; sourceTree = "<group>"; };
 		D54894721FF0945E00F2019B /* LDao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDao.h; sourceTree = "<group>"; };
@@ -348,8 +345,6 @@
 				D5FC20361FCE9F0C0081AF72 /* Main.storyboard */,
 				D5FC20331FCE9F0C0081AF72 /* ViewController.h */,
 				D5FC20341FCE9F0C0081AF72 /* ViewController.m */,
-				D544834C1FED141800D2F681 /* test.h */,
-				D544834D1FED141800D2F681 /* test.m */,
 			);
 			path = LBaseClass;
 			sourceTree = "<group>";
@@ -580,7 +575,6 @@
 				D5DE27EC1FCFAE48004BC8F8 /* LTableView.m in Sources */,
 				D5E1372C1FECCF9300581313 /* NSObject+Category.m in Sources */,
 				D5DB073F1FEA5C0200A347B1 /* LApp.m in Sources */,
-				D544834E1FED141800D2F681 /* test.m in Sources */,
 				D5AEAFB61FD03FA400AF2A4C /* LContext.m in Sources */,
 				D5FC20651FCEA0BF0081AF72 /* LTabBarController.m in Sources */,
 				D5E136E81FEB9D1500581313 /* NSString+Parser.m in Sources */,

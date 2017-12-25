@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "test.h"
 
 @interface ViewController ()
 
@@ -18,12 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    test * view = [[test alloc] initWithFrame:CGRectMake(10.0f, 10.0f, 10.0f, 10.0f)];
-    view.frame = [UIScreen mainScreen].bounds;
-    [[UIApplication sharedApplication].keyWindow addSubview:view];
-    [view initialize];
-
 }
 
 
