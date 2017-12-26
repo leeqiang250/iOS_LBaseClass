@@ -43,6 +43,10 @@
 #import "LDao.h"
 
 
+//--------------------LLanguage--------------------
+#import "LLanguage.h"
+
+
 //--------------------LModel--------------------
 #import "LModel.h"
 #import "LObject.h"
