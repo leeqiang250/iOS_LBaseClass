@@ -49,8 +49,6 @@
 
 
 //--------------------LNetwork--------------------
-#import "LRequest.h"
-#import "LResponse.h"
 #import "LNetwork.h"
 
 
