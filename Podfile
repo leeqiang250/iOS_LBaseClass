@@ -7,4 +7,5 @@ target 'LBaseClass' do
     pod 'MJExtension'
     pod 'MBProgressHUD'
     pod 'ReactiveObjC'
+    pod 'YYModel'
 end
