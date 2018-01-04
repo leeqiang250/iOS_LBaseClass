@@ -7,7 +7,10 @@
 //
 
 #import "LTableViewCell.h"
+#import "LFontModel.h"
 
 @interface LFontCell : LTableViewCell
+
+@property (nonatomic, strong) LFontModel * model;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LBaseClass.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    LFontTableView * tb = [[LFontTableView alloc] init];
+    tb.frame = self.view.bounds;
+    [tb reloadData];
+    
+    [self.view addSubview:tb];
 }
 
 

@@ -43,6 +43,11 @@
 #import "LDao.h"
 
 
+//--------------------LFont--------------------
+#import "LFont.h"
+#import "LFontTableView.h"
+
+
 //--------------------LLanguage--------------------
 #import "LLanguage.h"
 
