@@ -15,6 +15,9 @@
 		D54894771FF0946B00F2019B /* LService.m in Sources */ = {isa = PBXBuildFile; fileRef = D54894761FF0946B00F2019B /* LService.m */; };
 		D548948F1FF09D1500F2019B /* LNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = D548948E1FF09D1500F2019B /* LNetwork.m */; };
 		D54894A81FF1FA0000F2019B /* LLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = D54894A71FF1FA0000F2019B /* LLanguage.m */; };
+		D54F32831FFDC16400C1169A /* LTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D54F32821FFDC16400C1169A /* LTableViewCell.m */; };
+		D54F32861FFDC20B00C1169A /* LFontCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D54F32851FFDC20B00C1169A /* LFontCell.m */; };
+		D54F32891FFDC2BA00C1169A /* LFontTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D54F32881FFDC2BA00C1169A /* LFontTableView.m */; };
 		D5AEAFAE1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */; };
 		D5AEAFB61FD03FA400AF2A4C /* LContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEAFB51FD03FA400AF2A4C /* LContext.m */; };
 		D5DB07381FEA599300A347B1 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DB07371FEA599300A347B1 /* NSString+MD5.m */; };
@@ -80,6 +83,12 @@
 		D548948E1FF09D1500F2019B /* LNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNetwork.m; sourceTree = "<group>"; };
 		D54894A61FF1FA0000F2019B /* LLanguage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLanguage.h; sourceTree = "<group>"; };
 		D54894A71FF1FA0000F2019B /* LLanguage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLanguage.m; sourceTree = "<group>"; };
+		D54F32811FFDC16400C1169A /* LTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTableViewCell.h; sourceTree = "<group>"; };
+		D54F32821FFDC16400C1169A /* LTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTableViewCell.m; sourceTree = "<group>"; };
+		D54F32841FFDC20B00C1169A /* LFontCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFontCell.h; sourceTree = "<group>"; };
+		D54F32851FFDC20B00C1169A /* LFontCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFontCell.m; sourceTree = "<group>"; };
+		D54F32871FFDC2BA00C1169A /* LFontTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFontTableView.h; sourceTree = "<group>"; };
+		D54F32881FFDC2BA00C1169A /* LFontTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFontTableView.m; sourceTree = "<group>"; };
 		D5AEAFAC1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
 		D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 		D5AEAFB41FD03FA400AF2A4C /* LContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LContext.h; sourceTree = "<group>"; };
@@ -243,6 +252,17 @@
 			path = LLanguage;
 			sourceTree = "<group>";
 		};
+		D54F327D1FFDC0CE00C1169A /* LFont */ = {
+			isa = PBXGroup;
+			children = (
+				D54F32841FFDC20B00C1169A /* LFontCell.h */,
+				D54F32851FFDC20B00C1169A /* LFontCell.m */,
+				D54F32871FFDC2BA00C1169A /* LFontTableView.h */,
+				D54F32881FFDC2BA00C1169A /* LFontTableView.m */,
+			);
+			path = LFont;
+			sourceTree = "<group>";
+		};
 		D5AEAFAF1FD03C2B00AF2A4C /* LSingleton */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,6 +391,7 @@
 				D5AEAFB31FD03F9000AF2A4C /* LContext */,
 				D5FC20511FCE9FA10081AF72 /* LController */,
 				D548946E1FF0941F00F2019B /* LDao */,
+				D54F327D1FFDC0CE00C1169A /* LFont */,
 				D54894A51FF1F9EE00F2019B /* LLanguage */,
 				D5FC20521FCE9FA10081AF72 /* LModel */,
 				D5E136DC1FEB7E8A00581313 /* LNetwork */,
@@ -424,6 +445,8 @@
 				D5DE27F11FCFAF23004BC8F8 /* LTabBar.m */,
 				D5DE27EA1FCFAE48004BC8F8 /* LTableView.h */,
 				D5DE27EB1FCFAE48004BC8F8 /* LTableView.m */,
+				D54F32811FFDC16400C1169A /* LTableViewCell.h */,
+				D54F32821FFDC16400C1169A /* LTableViewCell.m */,
 				D5DE27ED1FCFAEC3004BC8F8 /* LTextField.h */,
 				D5DE27EE1FCFAEC3004BC8F8 /* LTextField.m */,
 				D5FC20581FCE9FA10081AF72 /* LView.h */,
@@ -576,6 +599,7 @@
 				D5FC205B1FCE9FA10081AF72 /* LLabel.m in Sources */,
 				D5DB07381FEA599300A347B1 /* NSString+MD5.m in Sources */,
 				D54894741FF0945E00F2019B /* LDao.m in Sources */,
+				D54F32891FFDC2BA00C1169A /* LFontTableView.m in Sources */,
 				D5DE27EF1FCFAEC3004BC8F8 /* LTextField.m in Sources */,
 				D5FC205F1FCE9FFA0081AF72 /* LViewController.m in Sources */,
 				D5FC206E1FCEA1A70081AF72 /* LModel.m in Sources */,
@@ -590,6 +614,7 @@
 				D5E1372C1FECCF9300581313 /* NSObject+Category.m in Sources */,
 				D5DB073F1FEA5C0200A347B1 /* LApp.m in Sources */,
 				D5AEAFB61FD03FA400AF2A4C /* LContext.m in Sources */,
+				D54F32831FFDC16400C1169A /* LTableViewCell.m in Sources */,
 				D5FC20651FCEA0BF0081AF72 /* LTabBarController.m in Sources */,
 				D5E136E81FEB9D1500581313 /* NSString+Parser.m in Sources */,
 				D5FC20401FCE9F0C0081AF72 /* main.m in Sources */,
@@ -598,6 +623,7 @@
 				D5DE27F21FCFAF23004BC8F8 /* LTabBar.m in Sources */,
 				D5FC20711FCEA1BE0081AF72 /* LImageView.m in Sources */,
 				D5FC206B1FCEA1930081AF72 /* LObject.m in Sources */,
+				D54F32861FFDC20B00C1169A /* LFontCell.m in Sources */,
 				D5FC20321FCE9F0C0081AF72 /* AppDelegate.m in Sources */,
 				D5AEAFAE1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m in Sources */,
 			);

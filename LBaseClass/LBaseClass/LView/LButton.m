@@ -21,6 +21,14 @@
     return self;
 }
 
+//- (instancetype)initWithFrame:(CGRect)frame {
+//    self = [super initWithFrame:frame];
+//
+//    [self initialize];
+//
+//    return self;
+//}
+
 //- (instancetype)initWithCoder:(NSCoder *)aDecoder {
 //    self = [super initWithCoder:aDecoder];
 //
@@ -29,16 +37,10 @@
 //    return self;
 //}
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    
-    [self initialize];
-    
-    return self;
-}
-
 - (NSString *)description {
-    return [NSString stringWithFormat:@"uid:%@__createTime:%f", self.uid, self.createTime];
+    _logRetainCount(self);
+    
+    return [NSString stringWithFormat:@"class:%@__uid:%@__createTime:%f", self.class, self.uid, self.createTime];
 }
 
 - (void)dealloc {

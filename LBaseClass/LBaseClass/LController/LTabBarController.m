@@ -79,7 +79,9 @@
 }
 
 - (NSString *)description {
-    return [NSString stringWithFormat:@"uid:%@__createTime:%f", self.uid, self.createTime];
+    _logRetainCount(self);
+    
+    return [NSString stringWithFormat:@"class:%@__uid:%@__createTime:%f", self.class, self.uid, self.createTime];
 }
 
 - (void)dealloc {

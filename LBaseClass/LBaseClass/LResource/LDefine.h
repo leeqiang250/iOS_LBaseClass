@@ -38,7 +38,7 @@
 #define _logError(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,0,0;" @"%@:%@:%d:" frmt XCODE_COLORS_RESET), NSStringFromClass(self.class), NSStringFromSelector(_cmd), __LINE__, ##__VA_ARGS__);
 
 //输出引用计数
-#define _logRetainCount(obj) _logBlue(@"RetainCount:%@:%ld", obj == nil ? @"" : NSStringFromClass([obj class]), obj == nil ? -100 : CFGetRetainCount((__bridge CFTypeRef)obj));
+#define _logRetainCount(obj) _logBlue(@"RetainCount:%@:%ld", obj == nil ? @"nil" : NSStringFromClass([obj class]), obj == nil ? -100 : CFGetRetainCount((__bridge CFTypeRef)obj));
 
 #else
 

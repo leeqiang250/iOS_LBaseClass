@@ -1,41 +1,36 @@
 //
-//  LTabBar.m
+//  LTableViewCell.m
 //  LBaseClass
 //
-//  Created by liqiang on 2017/11/30.
-//  Copyright © 2017年 liqiang. All rights reserved.
+//  Created by liqiang on 2018/1/4.
+//  Copyright © 2018年 liqiang. All rights reserved.
 //
 
-#import "LTabBar.h"
+#import "LTableViewCell.h"
 #import "LDefine.h"
 
-@implementation LTabBar
+@implementation LTableViewCell
 
 #pragma mark - Interface
 
-- (instancetype)init {
-    self = [super init];
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     
     [self initialize];
     
     return self;
 }
 
-//- (instancetype)initWithFrame:(CGRect)frame {
-//    self = [super initWithFrame:frame];
-//
-//    [self initialize];
-//
-//    return self;
-//}
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    // Initialization code
+}
 
-//- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-//    self = [super initWithCoder:aDecoder];
-//    
-//    [self initialize];
-//    
-//    return self;
-//}
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+    
+    // Configure the view for the selected state
+}
 
 - (NSString *)description {
     _logRetainCount(self);
