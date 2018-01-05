@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LBaseClass/LBaseClass/LView/LView.m"
-            timestampString = "536730753.572369"
+            timestampString = "536740533.602189"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LBaseClass/LBaseClass/LModel/LObject.m"
-            timestampString = "536730753.572558"
+            timestampString = "536833943.622543"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "+propertyKeys:"
             landmarkType = "7">
          </BreakpointContent>

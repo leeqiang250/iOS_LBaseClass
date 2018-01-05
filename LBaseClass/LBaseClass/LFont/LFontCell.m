@@ -53,7 +53,6 @@
 - (void)layoutSubviews {
     [self.info mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.bottom.left.right.mas_equalTo(0.0f);
-        //make.bottom.mas_equalTo(self.contentView.mas_bottom);
     }];
 }
 

@@ -14,6 +14,11 @@
 
 #pragma mark - Interface
 
+//liqiang
+//+ (void)load {
+//    _logImport()
+//}
+
 - (instancetype)init {
     self = [super init];
     

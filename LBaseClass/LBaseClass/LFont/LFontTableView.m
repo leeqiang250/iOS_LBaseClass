@@ -36,7 +36,7 @@
         for (int i = 5; i < 31; i++) {
             for (NSNumber * weight in weights) {
                 LFontModel * model = [[LFontModel alloc] init];
-                model.text = [NSString stringWithFormat:@"%d%@%@", i, @"生日快乐", weight];
+                model.text = [NSString stringWithFormat:@"%d%@%@", i, [NSUUID UUID].UUIDString, weight];
                 model.size = i;
                 model.weight = weight.floatValue;
                 
