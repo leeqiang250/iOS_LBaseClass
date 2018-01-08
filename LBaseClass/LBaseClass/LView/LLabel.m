@@ -49,6 +49,10 @@
     _logImport();
 }
 
+- (void)refreshUI {
+    
+}
+
 #pragma mark - LInitProtocol
 
 - (void)initialize {

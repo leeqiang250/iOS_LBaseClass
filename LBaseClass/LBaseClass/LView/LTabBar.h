@@ -21,4 +21,9 @@
  */
 @property (nonatomic, assign, readonly) NSTimeInterval createTime;
 
+/**
+ 刷新UI
+ */
+- (void)refreshUI;
+
 @end

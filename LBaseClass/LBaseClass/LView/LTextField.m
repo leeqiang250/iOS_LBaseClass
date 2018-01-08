@@ -49,6 +49,10 @@
     _logImport();
 }
 
+- (void)refreshUI {
+    
+}
+
 - (void)setPlaceholderFont:(UIFont *)font {
     [self setValue:font forKey:@"_placeholderLabel.font"];
 }
