@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "LBaseClass/LBaseClass.h"
+
+#import "LSettingVM.h"
 
 @interface AppDelegate ()
 
@@ -16,6 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[[LSettingVM alloc] init] dd];
+//    LCMDType * vv0 = LCMDTypeGetAll;
+//    LCMDType vv1 = LCMDTypeGetLastPage;
+//    LCMDType vv2 = LCMDTypeGetNextPage;
     
     return YES;
 }

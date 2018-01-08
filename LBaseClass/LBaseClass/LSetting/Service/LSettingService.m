@@ -1,14 +1,17 @@
 //
-//  LServiceProtocol.h
+//  LSettingService.m
 //  LBaseClass
 //
 //  Created by liqiang on 2018/1/8.
 //  Copyright © 2018年 liqiang. All rights reserved.
 //
 
-@protocol LServiceProtocol <NSObject>
+#import "LSettingService.h"
 
-@optional
+@implementation LSettingService
 
+- (void)initialize {
+    
+}
 
 @end

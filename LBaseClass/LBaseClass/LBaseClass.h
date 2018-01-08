@@ -75,6 +75,10 @@
 #import "LService.h"
 
 
+//--------------------LSetting--------------------
+//#import "LService.h"
+
+
 //--------------------LSingleton--------------------
 #import "LSingleton.h"
 
