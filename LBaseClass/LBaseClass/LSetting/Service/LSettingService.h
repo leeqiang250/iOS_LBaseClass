@@ -7,6 +7,7 @@
 //
 
 #import "LService.h"
+#import "LSettingModel.h"
 
 @interface LSettingService : LService
 

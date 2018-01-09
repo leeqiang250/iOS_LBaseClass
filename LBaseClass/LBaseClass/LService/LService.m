@@ -57,21 +57,17 @@ LCmd * const LCmdGetNextPage = @"LCmdGetNextPage";//下一页数据
  订阅具体类型的命令
  */
 - (RACDisposable *)subscribeNext:(LCmd *)cmd nextBlock:(void (^)(LCmdTransfer * x))nextBlock {
-    return [self.subject subscribeNext:^(id x) {
-        LCmdTransfer * transfer = x;
-        if ([transfer.cmd isEqualToString:cmd] && nextBlock) {
-            nextBlock(x);
-        }
-    }];
+    return nil;
+}
+
+- (RACSignal *)execute:(LCmdTransfer *)transfer {
+    return [self.command execute:transfer];
 }
 
 /**
  命令处理中心，外部不调用
  */
-- (RACDisposable *)cmdHandle:(LCmdTransfer *)input subscriber:(id<RACSubscriber>)subscriber {
-    [self.subject sendNext:[LCmdTransfer cmd:input.cmd value:nil]];
-    [self.subject sendCompleted];
-    
+- (RACDisposable *)cmdHandle:(LCmdTransfer *)transfer subscriber:(id<RACSubscriber>)subscriber {
     return nil;
 }
 
