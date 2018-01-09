@@ -27,13 +27,14 @@ LCmd * const LCmdGetNextPage = @"LCmdGetNextPage";//下一页数据
  */
 - (RACCommand *)command {
     if (!_command) {
+        __weak typeof(self) weakSelf = self;
         _command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
             if (input == nil || [NSString isNullOrEmpty:((LCmdTransfer *)input).cmd]) {
                 return nil;
             }
-            
+            __strong typeof(weakSelf) strongSelf = weakSelf;
             return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-                return [self cmdHandle:input subscriber:subscriber];
+                return [strongSelf cmdHandle:input subscriber:subscriber];
             }];
         }];
     }
