@@ -7,6 +7,7 @@
 //
 
 #import "LService.h"
+#import "NSString+Parser.h"
 
 
 LCMDType * const LCMDTypeGetAll = @"LCMDTypeGetAll";//全部数据
@@ -16,20 +17,23 @@ LCMDType * const LCMDTypeGetNextPage = @"LCMDTypeGetNextPage";//下一页数据
 
 @implementation LService
 
-#pragma mark - Interface
+#pragma mark - LCmdProtocol
 
+@synthesize command = _command;
+@synthesize subject = _subject;
+
+/**
+ 命令信号
+ */
 - (RACCommand *)command {
     if (!_command) {
-        __weak typeof(self) weakSelf = self;
         _command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-            return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-                [weakSelf cmdHandle:input];
-                
-                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                    [self.subject sendNext:LCMDTypeGetAll];
-                });
-                
+            if (input == nil || [NSString isNullOrEmpty:((LCmdTransfer *)input).type]) {
                 return nil;
+            }
+            
+            return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+                return [self cmdHandle:input subscriber:subscriber];
             }];
         }];
     }
@@ -37,17 +41,37 @@ LCMDType * const LCMDTypeGetNextPage = @"LCMDTypeGetNextPage";//下一页数据
     return _command;
 }
 
+/**
+ 订阅信号
+ */
 - (RACSubject *)subject {
     if (!_subject) {
         _subject = [[RACSubject alloc] init];
     }
     
-    
     return _subject;
 }
 
-- (void)cmdHandle:(id)input {
+/**
+ 订阅具体类型的命令
+ */
+- (RACDisposable *)subscribeNext:(LCMDType *)type nextBlock:(void (^)(LCmdTransfer * x))nextBlock {
+    return [self.subject subscribeNext:^(id x) {
+        LCmdTransfer * transfer = x;
+        if ([transfer.type isEqualToString:type] && nextBlock) {
+            nextBlock(x);
+        }
+    }];
+}
+
+/**
+ 命令处理中心，外部不调用
+ */
+- (RACDisposable *)cmdHandle:(LCmdTransfer *)input subscriber:(id<RACSubscriber>)subscriber {
+    [self.subject sendNext:[LCmdTransfer cmdWithType:input.type value:nil]];
+    [self.subject sendCompleted];
     
+    return nil;
 }
 
 @end

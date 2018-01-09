@@ -96,7 +96,7 @@
 
 
 //--------------------LViewModel--------------------
-#import "LInput.h"
+#import "LCmdTransfer.h"
 #import "LViewModel.h"
 
 

@@ -10,6 +10,4 @@
 
 @interface LSettingVM : LViewModel
 
-- (void)dd;
-
 @end

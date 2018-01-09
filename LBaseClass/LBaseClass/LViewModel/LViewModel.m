@@ -10,21 +10,4 @@
 
 @implementation LViewModel
 
-#pragma mark - Interface
-
-- (RACSubject *)subject {
-    if (!_subject) {
-        _subject = [[RACSubject alloc] init];
-    }
-    
-    return _subject;
-}
-
-#pragma mark - LInitProtocol
-
-- (void)initialize {
-    [super initialize];
-    
-}
-
 @end

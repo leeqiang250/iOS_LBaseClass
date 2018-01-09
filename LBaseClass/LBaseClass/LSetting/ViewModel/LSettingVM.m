@@ -11,14 +11,19 @@
 
 @implementation LSettingVM
 
-- (void)dd {
-    LSettingService * service = [[LSettingService alloc] init];
-    [service.subject subscribeNext:^(id x) {
-        
-    }];
-    
-    [service.command execute:LCMDTypeGetNextPage];
-    
-}
+//- (void)dd {
+//    LSettingService * service = [[LSettingService alloc] init];
+//    [service subscribeNext:LCMDTypeGetNextPage nextBlock:^(LCmdTransfer * x) {
+//        NSLog(@"%d%@", __LINE__, x);
+//    }];
+//    [service.subject subscribeNext:^(id x) {
+//        NSLog(@"%d%@", __LINE__, x);
+//    }];
+//    [service.subject subscribeNext:^(id x) {
+//        NSLog(@"%d%@", __LINE__, x);
+//    }];
+//    
+//    [service.command execute:[LCmdTransfer cmdWithType:LCMDTypeGetNextPage value:nil]];
+//}
 
 @end

@@ -10,8 +10,4 @@
 
 @implementation LSettingService
 
-- (void)initialize {
-    
-}
-
 @end

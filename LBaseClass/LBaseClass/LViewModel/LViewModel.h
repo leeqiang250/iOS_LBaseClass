@@ -7,18 +7,7 @@
 //
 
 #import "LObject.h"
-#import <ReactiveObjC/ReactiveObjC.h>
 
 @interface LViewModel : LObject
-
-/**
- 命令
- */
-@property (nonatomic, strong) RACCommand * command;
-
-/**
- 订阅
- */
-@property (nonatomic, strong) RACSubject * subject;
 
 @end
