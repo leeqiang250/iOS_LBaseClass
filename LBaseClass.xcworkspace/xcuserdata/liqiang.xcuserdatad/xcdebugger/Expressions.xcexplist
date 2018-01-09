@@ -3,6 +3,12 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "__43-[LSettingService subscribeNext:nextBlock:]_block_invoke:LSettingService.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[LService command]:LService.m">
+      </ContextState>
+      <ContextState
          contextName = "__16-[LSettingVM dd]_block_invoke:LSettingVM.m">
       </ContextState>
    </ContextStates>

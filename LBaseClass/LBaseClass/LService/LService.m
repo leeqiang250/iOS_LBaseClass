@@ -19,8 +19,8 @@ LCmd * const LCmdGetNextPage = @"LCmdGetNextPage";//下一页数据
 
 #pragma mark - LCmdProtocol
 
-@synthesize command = _command;
-@synthesize subject = _subject;
+@synthesize command = _command;//命令信号
+@synthesize subject = _subject;//订阅信号
 
 /**
  命令信号
@@ -54,12 +54,20 @@ LCmd * const LCmdGetNextPage = @"LCmdGetNextPage";//下一页数据
 }
 
 /**
- 订阅具体类型的命令
+ 订阅具体类型的命令，建议使用该方法订阅命令，使代码更清晰
  */
 - (RACDisposable *)subscribeNext:(LCmd *)cmd nextBlock:(void (^)(LCmdTransfer * x))nextBlock {
-    return nil;
+    return [self.subject subscribeNext:^(id x) {
+        LCmdTransfer * transfer = x;
+        if ([transfer.cmd isEqualToString:cmd] && nextBlock) {
+            nextBlock(x);
+        }
+    }];
 }
 
+/**
+ 执行具体类型的命令，建议使用该方法执行命令，使代码更清晰
+ */
 - (RACSignal *)execute:(LCmdTransfer *)transfer {
     return [self.command execute:transfer];
 }
@@ -68,6 +76,9 @@ LCmd * const LCmdGetNextPage = @"LCmdGetNextPage";//下一页数据
  命令处理中心，外部不调用
  */
 - (RACDisposable *)cmdHandle:(LCmdTransfer *)transfer subscriber:(id<RACSubscriber>)subscriber {
+    [subscriber sendNext:transfer];
+    [subscriber sendCompleted];
+    
     return nil;
 }
 

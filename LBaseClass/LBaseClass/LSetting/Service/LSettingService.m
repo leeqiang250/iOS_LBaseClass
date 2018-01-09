@@ -10,14 +10,7 @@
 
 @implementation LSettingService
 
-- (RACDisposable *)subscribeNext:(LCmd *)cmd nextBlock:(void (^)(LCmdTransfer *))nextBlock {
-    return [self.subject subscribeNext:^(id x) {
-        LCmdTransfer * transfer = x;
-        if ([transfer.cmd isEqualToString:cmd] && nextBlock) {
-            nextBlock(x);
-        }
-    }];
-}
+#pragma mark - LCmdProtocol
 
 - (RACDisposable *)cmdHandle:(LCmdTransfer *)transfer subscriber:(id<RACSubscriber>)subscriber {
     id value = nil;
