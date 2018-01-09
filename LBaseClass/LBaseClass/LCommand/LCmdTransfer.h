@@ -9,19 +9,19 @@
 #import "LObject.h"
 
 
-typedef NSString LCMDType _NS_TYPED_EXTENSIBLE_ENUM;//命令类型
+typedef NSString LCmd _NS_TYPED_EXTENSIBLE_ENUM;//命令类型
 
 
 @interface LCmdTransfer : LObject
 
-+ (instancetype)cmdWithType:(LCMDType *)type value:(id)value;
++ (instancetype)cmd:(LCmd *)cmd value:(id)value;
 
-- (instancetype)initWithType:(LCMDType *)type value:(id)value;
+- (instancetype)initWithCmd:(LCmd *)cmd value:(id)value;
 
 /**
  命令类型
  */
-@property (nonatomic, copy) LCMDType * type;
+@property (nonatomic, copy) LCmd * cmd;
 
 /**
  命令内容

@@ -8,6 +8,25 @@
 //
 
 #import <ReactiveObjC/ReactiveObjC.h>
+#import "LCmdTransfer.h"
+
+
+//DEMO
+//LSettingService * service = [[LSettingService alloc] init];
+//[service subscribeNext:LCmdGetNextPage nextBlock:^(LCmdTransfer * x) {
+//    NSLog(@"%d%@", __LINE__, x);
+//}];
+//[service.subject subscribeNext:^(id x) {
+//    NSLog(@"%d%@", __LINE__, x);
+//}];
+//[service.subject subscribeNext:^(id x) {
+//    NSLog(@"%d%@", __LINE__, x);
+//}];
+//
+//[service.command execute:[LCmdTransfer cmd:LCmdGetNextPage value:nil]];
+
+
+
 
 @protocol LCmdProtocol <NSObject>
 
@@ -25,9 +44,9 @@
 @optional
 
 /**
- 订阅具体类型的命令
+ 订阅具体类型的命令，建议使用该方法订阅命令，使代码更清晰
  */
-- (RACDisposable *)subscribeNext:(LCMDType *)type nextBlock:(void (^)(LCmdTransfer * x))nextBlock;
+- (RACDisposable *)subscribeNext:(LCmd *)type nextBlock:(void (^)(LCmdTransfer * x))nextBlock;
 
 /**
  命令处理中心，外部不调用

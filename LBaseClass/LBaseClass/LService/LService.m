@@ -10,9 +10,9 @@
 #import "NSString+Parser.h"
 
 
-LCMDType * const LCMDTypeGetAll = @"LCMDTypeGetAll";//全部数据
-LCMDType * const LCMDTypeGetLastPage = @"LCMDTypeGetLastPage";//上一页数据
-LCMDType * const LCMDTypeGetNextPage = @"LCMDTypeGetNextPage";//下一页数据
+LCmd * const LCmdGetAll = @"LCmdGetAll";//全部数据
+LCmd * const LCmdGetLastPage = @"LCmdGetLastPage";//上一页数据
+LCmd * const LCmdGetNextPage = @"LCmdGetNextPage";//下一页数据
 
 
 @implementation LService
@@ -28,7 +28,7 @@ LCMDType * const LCMDTypeGetNextPage = @"LCMDTypeGetNextPage";//下一页数据
 - (RACCommand *)command {
     if (!_command) {
         _command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-            if (input == nil || [NSString isNullOrEmpty:((LCmdTransfer *)input).type]) {
+            if (input == nil || [NSString isNullOrEmpty:((LCmdTransfer *)input).cmd]) {
                 return nil;
             }
             
@@ -55,10 +55,10 @@ LCMDType * const LCMDTypeGetNextPage = @"LCMDTypeGetNextPage";//下一页数据
 /**
  订阅具体类型的命令
  */
-- (RACDisposable *)subscribeNext:(LCMDType *)type nextBlock:(void (^)(LCmdTransfer * x))nextBlock {
+- (RACDisposable *)subscribeNext:(LCmd *)cmd nextBlock:(void (^)(LCmdTransfer * x))nextBlock {
     return [self.subject subscribeNext:^(id x) {
         LCmdTransfer * transfer = x;
-        if ([transfer.type isEqualToString:type] && nextBlock) {
+        if ([transfer.cmd isEqualToString:cmd] && nextBlock) {
             nextBlock(x);
         }
     }];
@@ -68,7 +68,7 @@ LCMDType * const LCMDTypeGetNextPage = @"LCMDTypeGetNextPage";//下一页数据
  命令处理中心，外部不调用
  */
 - (RACDisposable *)cmdHandle:(LCmdTransfer *)input subscriber:(id<RACSubscriber>)subscriber {
-    [self.subject sendNext:[LCmdTransfer cmdWithType:input.type value:nil]];
+    [self.subject sendNext:[LCmdTransfer cmd:input.cmd value:nil]];
     [self.subject sendCompleted];
     
     return nil;

@@ -19,10 +19,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[[LSettingVM alloc] init] dd];
-//    LCMDType * vv0 = LCMDTypeGetAll;
-//    LCMDType vv1 = LCMDTypeGetLastPage;
-//    LCMDType vv2 = LCMDTypeGetNextPage;
+    [[LSettingVM alloc] init];
     
     return YES;
 }

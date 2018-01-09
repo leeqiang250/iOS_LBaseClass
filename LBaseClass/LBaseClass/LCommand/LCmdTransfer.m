@@ -12,14 +12,14 @@
 
 #pragma mark - Interface
 
-+ (instancetype)cmdWithType:(LCMDType *)type value:(id)value {
-    return [[self alloc] initWithType:type value:value];
++ (instancetype)cmd:(LCmd *)cmd value:(id)value {
+    return [[self alloc] initWithCmd:cmd value:value];
 }
 
-- (instancetype)initWithType:(LCMDType *)type value:(id)value {
+- (instancetype)initWithCmd:(LCmd *)cmd value:(id)value {
     self = [super init];
     
-    self.type = type;
+    self.cmd = cmd;
     self.value = value;
     
     return self;

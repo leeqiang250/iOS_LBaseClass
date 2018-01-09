@@ -28,6 +28,10 @@
 #import "UIViewController+Category.h"
 
 
+//--------------------LCommand--------------------
+#import "LCmdProtocol.h"
+
+
 //--------------------LContext--------------------
 #import "LContext.h"
 
