@@ -28,7 +28,7 @@
 #import "UIViewController+Category.h"
 
 
-//--------------------LCommand--------------------
+//--------------------LCmd--------------------
 #import "LCmdProtocol.h"
 
 
@@ -100,7 +100,6 @@
 
 
 //--------------------LViewModel--------------------
-#import "LCmdTransfer.h"
 #import "LViewModel.h"
 
 

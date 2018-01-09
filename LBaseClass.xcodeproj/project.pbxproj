@@ -27,7 +27,7 @@
 		D54F328F1FFDD49C00C1169A /* LFont.m in Sources */ = {isa = PBXBuildFile; fileRef = D54F328E1FFDD49C00C1169A /* LFont.m */; };
 		D5AEAFAE1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */; };
 		D5AEAFB61FD03FA400AF2A4C /* LContext.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEAFB51FD03FA400AF2A4C /* LContext.m */; };
-		D5B956FF20045FFA00F70A00 /* LCmdTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B956FE20045FFA00F70A00 /* LCmdTransfer.m */; };
+		D5B95704200464B900F70A00 /* LCmdTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = D5B95703200464B900F70A00 /* LCmdTransfer.m */; };
 		D5DB07381FEA599300A347B1 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DB07371FEA599300A347B1 /* NSString+MD5.m */; };
 		D5DB073B1FEA5A8200A347B1 /* NSString+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DB073A1FEA5A8200A347B1 /* NSString+Hex.m */; };
 		D5DB073F1FEA5C0200A347B1 /* LApp.m in Sources */ = {isa = PBXBuildFile; fileRef = D5DB073E1FEA5C0200A347B1 /* LApp.m */; };
@@ -115,9 +115,9 @@
 		D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 		D5AEAFB41FD03FA400AF2A4C /* LContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LContext.h; sourceTree = "<group>"; };
 		D5AEAFB51FD03FA400AF2A4C /* LContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LContext.m; sourceTree = "<group>"; };
-		D5B956FC20045FCD00F70A00 /* LCmdProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCmdProtocol.h; sourceTree = "<group>"; };
-		D5B956FD20045FFA00F70A00 /* LCmdTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCmdTransfer.h; sourceTree = "<group>"; };
-		D5B956FE20045FFA00F70A00 /* LCmdTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCmdTransfer.m; sourceTree = "<group>"; };
+		D5B95701200464B900F70A00 /* LCmdProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCmdProtocol.h; sourceTree = "<group>"; };
+		D5B95702200464B900F70A00 /* LCmdTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCmdTransfer.h; sourceTree = "<group>"; };
+		D5B95703200464B900F70A00 /* LCmdTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCmdTransfer.m; sourceTree = "<group>"; };
 		D5DB07361FEA599300A347B1 /* NSString+MD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		D5DB07371FEA599300A347B1 /* NSString+MD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		D5DB07391FEA5A8200A347B1 /* NSString+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Hex.h"; sourceTree = "<group>"; };
@@ -366,14 +366,14 @@
 			path = LContext;
 			sourceTree = "<group>";
 		};
-		D5B956FA20045F7A00F70A00 /* LCommand */ = {
+		D5B95700200464B900F70A00 /* LCmd */ = {
 			isa = PBXGroup;
 			children = (
-				D5B956FC20045FCD00F70A00 /* LCmdProtocol.h */,
-				D5B956FD20045FFA00F70A00 /* LCmdTransfer.h */,
-				D5B956FE20045FFA00F70A00 /* LCmdTransfer.m */,
+				D5B95701200464B900F70A00 /* LCmdProtocol.h */,
+				D5B95702200464B900F70A00 /* LCmdTransfer.h */,
+				D5B95703200464B900F70A00 /* LCmdTransfer.m */,
 			);
-			path = LCommand;
+			path = LCmd;
 			sourceTree = "<group>";
 		};
 		D5DB073C1FEA5BF100A347B1 /* LApp */ = {
@@ -486,7 +486,7 @@
 				D5DE27E91FCFABEA004BC8F8 /* LBaseClass.h */,
 				D548946D1FF0941F00F2019B /* LCache */,
 				D5DE28051FCFE65F004BC8F8 /* LCategory */,
-				D5B956FA20045F7A00F70A00 /* LCommand */,
+				D5B95700200464B900F70A00 /* LCmd */,
 				D5AEAFB31FD03F9000AF2A4C /* LContext */,
 				D5FC20511FCE9FA10081AF72 /* LController */,
 				D548946E1FF0941F00F2019B /* LDao */,
@@ -697,6 +697,7 @@
 				D54F328F1FFDD49C00C1169A /* LFont.m in Sources */,
 				D5FC20681FCEA1680081AF72 /* LNavigationController.m in Sources */,
 				D5DB07421FEA619900A347B1 /* NSData+Hex.m in Sources */,
+				D5B95704200464B900F70A00 /* LCmdTransfer.m in Sources */,
 				D5FC205A1FCE9FA10081AF72 /* LButton.m in Sources */,
 				D5FC205B1FCE9FA10081AF72 /* LLabel.m in Sources */,
 				D5DB07381FEA599300A347B1 /* NSString+MD5.m in Sources */,
@@ -734,7 +735,6 @@
 				D5FC206B1FCEA1930081AF72 /* LObject.m in Sources */,
 				D54F32861FFDC20B00C1169A /* LFontCell.m in Sources */,
 				D5FC20321FCE9F0C0081AF72 /* AppDelegate.m in Sources */,
-				D5B956FF20045FFA00F70A00 /* LCmdTransfer.m in Sources */,
 				D5AEAFAE1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
