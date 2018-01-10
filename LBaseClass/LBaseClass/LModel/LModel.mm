@@ -7,19 +7,15 @@
 //
 
 #import "LModel.h"
-#import <objc/runtime.h>
+#import "LModel+WCTTableCoding.h"
 
 @implementation LModel
 
-#pragma mark - Interface
+#pragma mark - 绑定表对应的类，绑定表和字段
 
+WCDB_IMPLEMENTATION(LModel)
+WCDB_SYNTHESIZE(LModel, displayOrder)
+WCDB_SYNTHESIZE(LModel, version)
 
-
-#pragma mark - LInitProtocol
-
-- (void)initialize {
-    [super initialize];
-    
-}
 
 @end

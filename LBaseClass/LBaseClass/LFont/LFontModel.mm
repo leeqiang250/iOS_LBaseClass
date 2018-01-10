@@ -7,6 +7,7 @@
 //
 
 #import "LFontModel.h"
+#import "LFontModel+WCTTableCoding.h"
 
 @implementation LFontModel
 

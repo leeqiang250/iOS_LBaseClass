@@ -1,15 +1,13 @@
 //
-//  LModel3.h
+//  LFontModel+WCTTableCoding.h
 //  LBaseClass
 //
 //  Created by liqiang on 2018/1/10.
 //  Copyright © 2018年 liqiang. All rights reserved.
 //
 
-#import "LModel2.h"
+#import <WCDB/WCDB.h>
 
-@interface LModel3 : LModel2
-
-@property (nonatomic, copy) NSString * test0;
+@interface LFontModel(WCTTableCoding)<WCTTableCoding>
 
 @end

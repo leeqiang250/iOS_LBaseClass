@@ -10,7 +10,7 @@
 #import "LBaseClass/LBaseClass.h"
 
 #import "LDB.h"
-
+#import "LModel.h"
 
 @interface AppDelegate ()
 
@@ -25,6 +25,7 @@
     // Override point for customization after application launch.
     
     [[[LDB alloc] init] dd];
+    [[LModel alloc] init];
     
     return YES;
 }

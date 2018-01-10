@@ -48,8 +48,9 @@
 
 
 //--------------------LFont--------------------
-#import "LFont.h"
-#import "LFontTableView.h"
+//liqiang
+//#import "LFont.h"
+//#import "LFontTableView.h"
 
 
 //--------------------LLanguage--------------------
@@ -62,7 +63,8 @@
 
 
 //--------------------LNetwork--------------------
-#import "LNetwork.h"
+//liqiang
+//#import "LNetwork.h"
 
 
 //--------------------LProtocol--------------------
