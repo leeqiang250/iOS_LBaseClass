@@ -7,8 +7,14 @@
 //
 
 #import "LObject.h"
-#import "LDaoProtocol.h"
+#import "LModel.h"
 
-@interface LDao : LObject<LDaoProtocol>
+@interface LDao : LObject
+
++ (instancetype)dbPath:(NSString *)dbPath secret:(NSString *)secret;
+
+- (BOOL)openWithDBPath:(NSString *)dbPath secret:(NSString *)secret;
+
+- (void)close;
 
 @end

@@ -9,8 +9,7 @@
 #import "AppDelegate.h"
 #import "LBaseClass/LBaseClass.h"
 
-#import "LDB.h"
-#import "LModel.h"
+#import "LDao.h"
 
 @interface AppDelegate ()
 
@@ -24,8 +23,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [[[LDB alloc] init] dd];
-    [[LModel alloc] init];
+    [LDao dbPath:@"" secret:nil];
     
     return YES;
 }
