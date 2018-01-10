@@ -54,7 +54,10 @@
 		D5E4EEA71FCEC8DD00211899 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D5E4EEA41FCEC8DC00211899 /* LICENSE */; };
 		D5E99FBD1FFE21BA00679B3E /* TimerRetainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E99FBC1FFE21BA00679B3E /* TimerRetainVC.m */; };
 		D5ED12E42004A0E30046C783 /* LSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ED12E32004A0E30046C783 /* LSettingCell.m */; };
-		D5FC20321FCE9F0C0081AF72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FC20311FCE9F0C0081AF72 /* AppDelegate.m */; };
+		D5ED12E92005AE600046C783 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ED12E82005AE600046C783 /* AppDelegate.m */; };
+		D5ED12F12005AF0B0046C783 /* LDB.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5ED12F02005AF0B0046C783 /* LDB.mm */; };
+		D5ED12F82005B3B30046C783 /* LObj.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5ED12F72005B3B20046C783 /* LObj.mm */; };
+		D5ED12FB2005B80C0046C783 /* LModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ED12FA2005B80C0046C783 /* LModel.m */; };
 		D5FC20351FCE9F0C0081AF72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FC20341FCE9F0C0081AF72 /* ViewController.m */; };
 		D5FC20381FCE9F0C0081AF72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FC20361FCE9F0C0081AF72 /* Main.storyboard */; };
 		D5FC203A1FCE9F0C0081AF72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5FC20391FCE9F0C0081AF72 /* Assets.xcassets */; };
@@ -68,7 +71,6 @@
 		D5FC20651FCEA0BF0081AF72 /* LTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FC20641FCEA0BF0081AF72 /* LTabBarController.m */; };
 		D5FC20681FCEA1680081AF72 /* LNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FC20671FCEA1680081AF72 /* LNavigationController.m */; };
 		D5FC206B1FCEA1930081AF72 /* LObject.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FC206A1FCEA1930081AF72 /* LObject.m */; };
-		D5FC206E1FCEA1A70081AF72 /* LModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FC206D1FCEA1A70081AF72 /* LModel.m */; };
 		D5FC20711FCEA1BE0081AF72 /* LImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FC20701FCEA1BE0081AF72 /* LImageView.m */; };
 /* End PBXBuildFile section */
 
@@ -165,9 +167,15 @@
 		D5E99FBC1FFE21BA00679B3E /* TimerRetainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerRetainVC.m; sourceTree = "<group>"; };
 		D5ED12E22004A0E30046C783 /* LSettingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSettingCell.h; sourceTree = "<group>"; };
 		D5ED12E32004A0E30046C783 /* LSettingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSettingCell.m; sourceTree = "<group>"; };
+		D5ED12E82005AE600046C783 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D5ED12ED2005AEDC0046C783 /* LDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDB.h; sourceTree = "<group>"; };
+		D5ED12F02005AF0B0046C783 /* LDB.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LDB.mm; sourceTree = "<group>"; };
+		D5ED12F42005B39E0046C783 /* LObj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LObj.h; sourceTree = "<group>"; };
+		D5ED12F72005B3B20046C783 /* LObj.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LObj.mm; sourceTree = "<group>"; };
+		D5ED12F92005B80C0046C783 /* LModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LModel.h; sourceTree = "<group>"; };
+		D5ED12FA2005B80C0046C783 /* LModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LModel.m; sourceTree = "<group>"; };
 		D5FC202D1FCE9F0C0081AF72 /* LBaseClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBaseClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FC20301FCE9F0C0081AF72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D5FC20311FCE9F0C0081AF72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D5FC20331FCE9F0C0081AF72 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D5FC20341FCE9F0C0081AF72 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D5FC20371FCE9F0C0081AF72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -191,8 +199,6 @@
 		D5FC20671FCEA1680081AF72 /* LNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LNavigationController.m; sourceTree = "<group>"; };
 		D5FC20691FCEA1930081AF72 /* LObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LObject.h; sourceTree = "<group>"; };
 		D5FC206A1FCEA1930081AF72 /* LObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LObject.m; sourceTree = "<group>"; };
-		D5FC206C1FCEA1A70081AF72 /* LModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LModel.h; sourceTree = "<group>"; };
-		D5FC206D1FCEA1A70081AF72 /* LModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LModel.m; sourceTree = "<group>"; };
 		D5FC206F1FCEA1BE0081AF72 /* LImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LImageView.h; sourceTree = "<group>"; };
 		D5FC20701FCEA1BE0081AF72 /* LImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LImageView.m; sourceTree = "<group>"; };
 		E8EEC17AAA58C7D7E79604B4 /* Pods-LBaseClass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBaseClass.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBaseClass/Pods-LBaseClass.debug.xcconfig"; sourceTree = "<group>"; };
@@ -325,6 +331,10 @@
 				D54894721FF0945E00F2019B /* LDao.h */,
 				D54894731FF0945E00F2019B /* LDao.m */,
 				D54894791FF094A600F2019B /* LDaoProtocol.h */,
+				D5ED12ED2005AEDC0046C783 /* LDB.h */,
+				D5ED12F02005AF0B0046C783 /* LDB.mm */,
+				D5ED12F42005B39E0046C783 /* LObj.h */,
+				D5ED12F72005B3B20046C783 /* LObj.mm */,
 			);
 			path = LDao;
 			sourceTree = "<group>";
@@ -477,17 +487,17 @@
 			isa = PBXGroup;
 			children = (
 				D5FC20301FCE9F0C0081AF72 /* AppDelegate.h */,
-				D5FC20311FCE9F0C0081AF72 /* AppDelegate.m */,
+				D5ED12E82005AE600046C783 /* AppDelegate.m */,
 				D5FC20391FCE9F0C0081AF72 /* Assets.xcassets */,
 				D5FC203E1FCE9F0C0081AF72 /* Info.plist */,
 				D5FC203B1FCE9F0C0081AF72 /* LaunchScreen.storyboard */,
 				D5FC20501FCE9FA00081AF72 /* LBaseClass */,
 				D5FC203F1FCE9F0C0081AF72 /* main.m */,
 				D5FC20361FCE9F0C0081AF72 /* Main.storyboard */,
-				D5FC20331FCE9F0C0081AF72 /* ViewController.h */,
-				D5FC20341FCE9F0C0081AF72 /* ViewController.m */,
 				D5E99FBB1FFE21BA00679B3E /* TimerRetainVC.h */,
 				D5E99FBC1FFE21BA00679B3E /* TimerRetainVC.m */,
+				D5FC20331FCE9F0C0081AF72 /* ViewController.h */,
+				D5FC20341FCE9F0C0081AF72 /* ViewController.m */,
 			);
 			path = LBaseClass;
 			sourceTree = "<group>";
@@ -536,8 +546,8 @@
 		D5FC20521FCE9FA10081AF72 /* LModel */ = {
 			isa = PBXGroup;
 			children = (
-				D5FC206C1FCEA1A70081AF72 /* LModel.h */,
-				D5FC206D1FCEA1A70081AF72 /* LModel.m */,
+				D5ED12F92005B80C0046C783 /* LModel.h */,
+				D5ED12FA2005B80C0046C783 /* LModel.m */,
 				D5FC20691FCEA1930081AF72 /* LObject.h */,
 				D5FC206A1FCEA1930081AF72 /* LObject.m */,
 			);
@@ -708,6 +718,8 @@
 				D5E136DF1FEB7EB000581313 /* LRequest.m in Sources */,
 				D54894711FF0945100F2019B /* LCache.m in Sources */,
 				D54F328F1FFDD49C00C1169A /* LFont.m in Sources */,
+				D5ED12F82005B3B30046C783 /* LObj.mm in Sources */,
+				D5ED12F12005AF0B0046C783 /* LDB.mm in Sources */,
 				D5FC20681FCEA1680081AF72 /* LNavigationController.m in Sources */,
 				D5DB07421FEA619900A347B1 /* NSData+Hex.m in Sources */,
 				D5B95704200464B900F70A00 /* LCmdTransfer.m in Sources */,
@@ -716,12 +728,13 @@
 				D5DB07381FEA599300A347B1 /* NSString+MD5.m in Sources */,
 				D54894741FF0945E00F2019B /* LDao.m in Sources */,
 				D54F32891FFDC2BA00C1169A /* LFontTableView.m in Sources */,
+				D5ED12FB2005B80C0046C783 /* LModel.m in Sources */,
 				D5DE27EF1FCFAEC3004BC8F8 /* LTextField.m in Sources */,
 				D5FC205F1FCE9FFA0081AF72 /* LViewController.m in Sources */,
-				D5FC206E1FCEA1A70081AF72 /* LModel.m in Sources */,
 				D54894A81FF1FA0000F2019B /* LLanguage.m in Sources */,
 				D5E136D81FEB5B5800581313 /* UIViewController+Category.m in Sources */,
 				D5ED12E42004A0E30046C783 /* LSettingCell.m in Sources */,
+				D5ED12E92005AE600046C783 /* AppDelegate.m in Sources */,
 				D536005F20035E1100A46722 /* LSettingService.m in Sources */,
 				D5FC20351FCE9F0C0081AF72 /* ViewController.m in Sources */,
 				D5FC20621FCEA0860081AF72 /* LTableViewController.m in Sources */,
@@ -748,7 +761,6 @@
 				D5FC20711FCEA1BE0081AF72 /* LImageView.m in Sources */,
 				D5FC206B1FCEA1930081AF72 /* LObject.m in Sources */,
 				D54F32861FFDC20B00C1169A /* LFontCell.m in Sources */,
-				D5FC20321FCE9F0C0081AF72 /* AppDelegate.m in Sources */,
 				D5AEAFAE1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
