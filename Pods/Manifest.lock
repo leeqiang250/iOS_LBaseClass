@@ -22,6 +22,9 @@ PODS:
   - SDWebImage (4.2.2):
     - SDWebImage/Core (= 4.2.2)
   - SDWebImage/Core (4.2.2)
+  - WCDB (1.0.6):
+    - WCDB/sqlcipher (= 1.0.6)
+  - WCDB/sqlcipher (1.0.6)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -32,6 +35,7 @@ DEPENDENCIES:
   - MJRefresh
   - ReactiveObjC
   - SDWebImage
+  - WCDB
   - YYModel
 
 SPEC CHECKSUMS:
@@ -42,8 +46,9 @@ SPEC CHECKSUMS:
   MJRefresh: 5f8552bc25ca8751c010f621c1098dbdaacbccd6
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
   SDWebImage: 89a9d32cd520bbb46eb14e541d5109b3564af198
+  WCDB: 4d2926bf695b2e00d785b50afd32c2dcc8cbbd98
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 796be4722792c097527fbcb87c93318785c87a58
+PODFILE CHECKSUM: cb7e53fb14082ef4511403912be4749553c9c4d5
 
 COCOAPODS: 1.3.1
