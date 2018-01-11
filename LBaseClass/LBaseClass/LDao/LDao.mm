@@ -50,6 +50,30 @@
     }
 }
 
+- (BOOL)createTable:(LModel *)model {
+    if (!model) {
+        return NO;
+    }
+    
+    @try {
+        return [self.wcdb createTableAndIndexesOfName:NSStringFromClass(model.class) withClass:model.class];
+    }@catch(NSException * e) {
+        return NO;
+    }
+}
+
+- (BOOL)dropTable:(LModel *)model {
+    if (!model) {
+        return NO;
+    }
+    
+    @try {
+        return [self.wcdb dropTableOfName:NSStringFromClass(model.class)];
+    }@catch(NSException * e) {
+        return NO;
+    }
+}
+
 - (BOOL)insertObject:(LModel *)model {
     if (!model) {
         return NO;
@@ -74,7 +98,7 @@
     }
 }
 
-- (BOOL)deleteAllObjectsFromModel:(LModel *)model {
+- (BOOL)deleteAllObjectsFromTable:(LModel *)model {
     if (!model) {
         return NO;
     }
@@ -86,13 +110,98 @@
     }
 }
 
-- (NSArray<LModel *> *)getAllObjectsFromModel:(LModel *)model {
+- (BOOL)deleteObjectsFromTable:(LModel *)model condition:(const WCTCondition &)condition {
+    if (!model) {
+        return NO;
+    }
+    
+    @try {
+        return [self.wcdb deleteObjectsFromTable:NSStringFromClass(model.class) where:condition];
+    }@catch(NSException * e) {
+        return NO;
+    }
+}
+
+
+- (NSArray<LModel *> *)getAllObjectsFromTable:(LModel *)model {
     if (!model) {
         return nil;
     }
     
     @try {
         return [self.wcdb getAllObjectsOfClass:model.class fromTable:NSStringFromClass(model.class)];
+    }@catch(NSException * e) {
+        return nil;
+    }
+}
+
+- (NSArray<LModel *> *)getObjectsFromTable:(LModel *)model condition:(const WCTCondition &)condition {
+    if (!model) {
+        return nil;
+    }
+    
+    @try {
+        return [self.wcdb getObjectsOfClass:model.class fromTable:NSStringFromClass(model.class) where:condition];
+    }@catch(NSException * e) {
+        return nil;
+    }
+}
+
+- (NSArray<LModel *> *)getObjectsFromTable:(LModel *)model orderList:(const WCTOrderByList &)orderList {
+    if (!model) {
+        return nil;
+    }
+    
+    @try {
+        return [self.wcdb getObjectsOfClass:model.class fromTable:NSStringFromClass(model.class) orderBy:orderList];
+    }@catch(NSException * e) {
+        return nil;
+    }
+}
+
+- (NSArray<LModel *> *)getObjectsFromTable:(LModel *)model condition:(const WCTCondition &)condition orderList:(const WCTOrderByList &)orderList {
+    if (!model) {
+        return nil;
+    }
+    
+    @try {
+        return [self.wcdb getObjectsOfClass:model.class fromTable:NSStringFromClass(model.class) where:condition orderBy:orderList];
+    }@catch(NSException * e) {
+        return nil;
+    }
+}
+
+- (LModel *)getObjectFromTable:(LModel *)model condition:(const WCTCondition &)condition {
+    if (!model) {
+        return nil;
+    }
+    
+    @try {
+        return [self.wcdb getOneObjectOfClass:model.class fromTable:NSStringFromClass(model.class) where:condition];
+    }@catch(NSException * e) {
+        return nil;
+    }
+}
+
+- (LModel *)getObjectFromTable:(LModel *)model orderList:(const WCTOrderByList &)orderList {
+    if (!model) {
+        return nil;
+    }
+    
+    @try {
+        return [self.wcdb getOneObjectOfClass:model.class fromTable:NSStringFromClass(model.class) orderBy:orderList];
+    }@catch(NSException * e) {
+        return nil;
+    }
+}
+
+- (LModel *)getObjectFromTable:(LModel *)model condition:(const WCTCondition &)condition orderList:(const WCTOrderByList &)orderList {
+    if (!model) {
+        return nil;
+    }
+    
+    @try {
+        return [self.wcdb getOneObjectOfClass:model.class fromTable:NSStringFromClass(model.class) where:condition orderBy:orderList];
     }@catch(NSException * e) {
         return nil;
     }
@@ -110,7 +219,7 @@
     }
 }
 
-- (BOOL)updateObject:(LModel *)model property:(const WCTProperty &)property{
+- (BOOL)updateObject:(LModel *)model property:(const WCTProperty &)property {
     if (!model) {
         return NO;
     }

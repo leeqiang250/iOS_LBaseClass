@@ -11,9 +11,25 @@
 
 @implementation LModel
 
-#pragma mark - 绑定表对应的类，绑定表和字段
+
+#pragma mark - 绑定表对应的类
 
 WCDB_IMPLEMENTATION(LModel)
+
+
+#pragma mark - 主键
+
+WCDB_PRIMARY(LModel, uid)
+
+
+#pragma mark - 索引
+
+WCDB_INDEX(LModel, "_index", createTime)
+
+
+#pragma mark - 绑定表和字段
+
+WCDB_SYNTHESIZE(LModel, createTime)
 WCDB_SYNTHESIZE(LModel, displayOrder)
 WCDB_SYNTHESIZE(LModel, version)
 
