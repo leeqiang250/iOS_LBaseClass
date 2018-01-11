@@ -54,7 +54,7 @@
 		D5E4EEA61FCEC8DD00211899 /* LBaseClass.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D5E4EEA31FCEC8DC00211899 /* LBaseClass.podspec */; };
 		D5E4EEA71FCEC8DD00211899 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D5E4EEA41FCEC8DC00211899 /* LICENSE */; };
 		D5E99FBD1FFE21BA00679B3E /* TimerRetainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E99FBC1FFE21BA00679B3E /* TimerRetainVC.m */; };
-		D5ED12E92005AE600046C783 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5ED12E82005AE600046C783 /* AppDelegate.mm */; };
+		D5ED12E92005AE600046C783 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ED12E82005AE600046C783 /* AppDelegate.m */; };
 		D5ED12FB2005B80C0046C783 /* LModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5ED12FA2005B80C0046C783 /* LModel.mm */; };
 		D5FC20351FCE9F0C0081AF72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FC20341FCE9F0C0081AF72 /* ViewController.m */; };
 		D5FC20381FCE9F0C0081AF72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FC20361FCE9F0C0081AF72 /* Main.storyboard */; };
@@ -170,7 +170,7 @@
 		D5E4EEA41FCEC8DC00211899 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D5E99FBB1FFE21BA00679B3E /* TimerRetainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerRetainVC.h; sourceTree = "<group>"; };
 		D5E99FBC1FFE21BA00679B3E /* TimerRetainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerRetainVC.m; sourceTree = "<group>"; };
-		D5ED12E82005AE600046C783 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		D5ED12E82005AE600046C783 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D5ED12F92005B80C0046C783 /* LModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LModel.h; sourceTree = "<group>"; };
 		D5ED12FA2005B80C0046C783 /* LModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LModel.mm; sourceTree = "<group>"; };
 		D5FC202D1FCE9F0C0081AF72 /* LBaseClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBaseClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -486,7 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				D5FC20301FCE9F0C0081AF72 /* AppDelegate.h */,
-				D5ED12E82005AE600046C783 /* AppDelegate.mm */,
+				D5ED12E82005AE600046C783 /* AppDelegate.m */,
 				D5FC20391FCE9F0C0081AF72 /* Assets.xcassets */,
 				D5FC203E1FCE9F0C0081AF72 /* Info.plist */,
 				D5FC203B1FCE9F0C0081AF72 /* LaunchScreen.storyboard */,
@@ -734,7 +734,7 @@
 				D5957AAA20060A6F00F6EE60 /* LSettingCell.m in Sources */,
 				D5E136D81FEB5B5800581313 /* UIViewController+Category.m in Sources */,
 				D5957AA220060A6F00F6EE60 /* LFontModel.mm in Sources */,
-				D5ED12E92005AE600046C783 /* AppDelegate.mm in Sources */,
+				D5ED12E92005AE600046C783 /* AppDelegate.m in Sources */,
 				D5FC20351FCE9F0C0081AF72 /* ViewController.m in Sources */,
 				D5FC20621FCEA0860081AF72 /* LTableViewController.m in Sources */,
 				D54894771FF0946B00F2019B /* LService.m in Sources */,

@@ -8,7 +8,7 @@
 
 #import "LObject.h"
 #import "LModel.h"
-#import <WCDB/WCDB.h>
+//#import <WCDB/WCDB.h>
 
 @interface LDao : LObject
 
@@ -37,33 +37,33 @@
 - (BOOL)deleteAllObjectsFromTable:(LModel *)model;
 
 //按条件删除对象
-- (BOOL)deleteObjectsFromTable:(LModel *)model condition:(const WCTCondition &)condition;
+//- (BOOL)deleteObjectsFromTable:(LModel *)model condition:(const WCTCondition &)condition;
 
 //获取全部对象
 - (NSArray<LModel *> *)getAllObjectsFromTable:(LModel *)model;
 
 //按条件获取全部对象
-- (NSArray<LModel *> *)getObjectsFromTable:(LModel *)model condition:(const WCTCondition &)condition;
+//- (NSArray<LModel *> *)getObjectsFromTable:(LModel *)model condition:(const WCTCondition &)condition;
 
 //按顺序获取全部对象
-- (NSArray<LModel *> *)getObjectsFromTable:(LModel *)model orderList:(const WCTOrderByList &)orderList;
+//- (NSArray<LModel *> *)getObjectsFromTable:(LModel *)model orderList:(const WCTOrderByList &)orderList;
 
 //按条件、顺序获取全部对象
-- (NSArray<LModel *> *)getObjectsFromTable:(LModel *)model condition:(const WCTCondition &)condition orderList:(const WCTOrderByList &)orderList;
+//- (NSArray<LModel *> *)getObjectsFromTable:(LModel *)model condition:(const WCTCondition &)condition orderList:(const WCTOrderByList &)orderList;
 
 //按条件获取一个对象
-- (LModel *)getObjectFromTable:(LModel *)model condition:(const WCTCondition &)condition;
+//- (LModel *)getObjectFromTable:(LModel *)model condition:(const WCTCondition &)condition;
 
 //按顺序获取一个对象
-- (LModel *)getObjectFromTable:(LModel *)model orderList:(const WCTOrderByList &)orderList;
+//- (LModel *)getObjectFromTable:(LModel *)model orderList:(const WCTOrderByList &)orderList;
 
 //按条件、顺序获取一个对象
-- (LModel *)getObjectFromTable:(LModel *)model condition:(const WCTCondition &)condition orderList:(const WCTOrderByList &)orderList;
+//- (LModel *)getObjectFromTable:(LModel *)model condition:(const WCTCondition &)condition orderList:(const WCTOrderByList &)orderList;
 
 //更新对象
 - (BOOL)updateObject:(LModel *)model;
 
 //更新对象
-- (BOOL)updateObject:(LModel *)model property:(const WCTProperty &)property;
+//- (BOOL)updateObject:(LModel *)model property:(const WCTProperty &)property;
 
 @end
