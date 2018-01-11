@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "LBaseClass/LBaseClass.h"
+//#import "LBaseClass/LBaseClass.h"
 
 //#import "LDao.h"
 
