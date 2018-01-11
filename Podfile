@@ -8,5 +8,4 @@ target 'LBaseClass' do
     pod 'MBProgressHUD'
     pod 'ReactiveObjC'
     pod 'YYModel'
-    pod 'WCDB'
 end

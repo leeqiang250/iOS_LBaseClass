@@ -12,18 +12,17 @@
 		D503884E1FE4CE9E00BA6487 /* LWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D503884D1FE4CE9E00BA6487 /* LWebView.m */; };
 		D53600572003528700A46722 /* LViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D53600562003528700A46722 /* LViewModel.m */; };
 		D54894711FF0945100F2019B /* LCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D54894701FF0945100F2019B /* LCache.m */; };
-		D54894741FF0945E00F2019B /* LDao.mm in Sources */ = {isa = PBXBuildFile; fileRef = D54894731FF0945E00F2019B /* LDao.mm */; };
 		D54894771FF0946B00F2019B /* LService.m in Sources */ = {isa = PBXBuildFile; fileRef = D54894761FF0946B00F2019B /* LService.m */; };
 		D54894A81FF1FA0000F2019B /* LLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = D54894A71FF1FA0000F2019B /* LLanguage.m */; };
 		D54F32831FFDC16400C1169A /* LTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D54F32821FFDC16400C1169A /* LTableViewCell.m */; };
 		D5957AA020060A6F00F6EE60 /* LFont.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A7E20060A6E00F6EE60 /* LFont.m */; };
 		D5957AA120060A6F00F6EE60 /* LFontCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A8020060A6E00F6EE60 /* LFontCell.m */; };
-		D5957AA220060A6F00F6EE60 /* LFontModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5957A8320060A6E00F6EE60 /* LFontModel.mm */; };
+		D5957AA220060A6F00F6EE60 /* LFontModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A8320060A6E00F6EE60 /* LFontModel.m */; };
 		D5957AA320060A6F00F6EE60 /* LFontTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A8520060A6E00F6EE60 /* LFontTableView.m */; };
 		D5957AA420060A6F00F6EE60 /* LNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A8820060A6E00F6EE60 /* LNetwork.m */; };
-		D5957AA520060A6F00F6EE60 /* LRequest.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5957A8B20060A6E00F6EE60 /* LRequest.mm */; };
-		D5957AA620060A6F00F6EE60 /* LResponse.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5957A8E20060A6E00F6EE60 /* LResponse.mm */; };
-		D5957AA720060A6F00F6EE60 /* LSettingModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5957A9320060A6F00F6EE60 /* LSettingModel.mm */; };
+		D5957AA520060A6F00F6EE60 /* LRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A8B20060A6E00F6EE60 /* LRequest.m */; };
+		D5957AA620060A6F00F6EE60 /* LResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A8E20060A6E00F6EE60 /* LResponse.m */; };
+		D5957AA720060A6F00F6EE60 /* LSettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A9320060A6F00F6EE60 /* LSettingModel.m */; };
 		D5957AA820060A6F00F6EE60 /* LSettingResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A9620060A6F00F6EE60 /* LSettingResponse.m */; };
 		D5957AA920060A6F00F6EE60 /* LSettingService.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A9920060A6F00F6EE60 /* LSettingService.m */; };
 		D5957AAA20060A6F00F6EE60 /* LSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A9C20060A6F00F6EE60 /* LSettingCell.m */; };
@@ -55,7 +54,7 @@
 		D5E4EEA71FCEC8DD00211899 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D5E4EEA41FCEC8DC00211899 /* LICENSE */; };
 		D5E99FBD1FFE21BA00679B3E /* TimerRetainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E99FBC1FFE21BA00679B3E /* TimerRetainVC.m */; };
 		D5ED12E92005AE600046C783 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ED12E82005AE600046C783 /* AppDelegate.m */; };
-		D5ED12FB2005B80C0046C783 /* LModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = D5ED12FA2005B80C0046C783 /* LModel.mm */; };
+		D5ED12FB2005B80C0046C783 /* LModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ED12FA2005B80C0046C783 /* LModel.m */; };
 		D5FC20351FCE9F0C0081AF72 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5FC20341FCE9F0C0081AF72 /* ViewController.m */; };
 		D5FC20381FCE9F0C0081AF72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5FC20361FCE9F0C0081AF72 /* Main.storyboard */; };
 		D5FC203A1FCE9F0C0081AF72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5FC20391FCE9F0C0081AF72 /* Assets.xcassets */; };
@@ -84,8 +83,6 @@
 		D540F5471FDFA57400AECCB7 /* LSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSingleton.h; sourceTree = "<group>"; };
 		D548946F1FF0945100F2019B /* LCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCache.h; sourceTree = "<group>"; };
 		D54894701FF0945100F2019B /* LCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCache.m; sourceTree = "<group>"; };
-		D54894721FF0945E00F2019B /* LDao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDao.h; sourceTree = "<group>"; };
-		D54894731FF0945E00F2019B /* LDao.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LDao.mm; sourceTree = "<group>"; };
 		D54894751FF0946B00F2019B /* LService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LService.h; sourceTree = "<group>"; };
 		D54894761FF0946B00F2019B /* LService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LService.m; sourceTree = "<group>"; };
 		D548947A1FF094B700F2019B /* LCacheProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCacheProtocol.h; sourceTree = "<group>"; };
@@ -93,27 +90,22 @@
 		D54894A71FF1FA0000F2019B /* LLanguage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLanguage.m; sourceTree = "<group>"; };
 		D54F32811FFDC16400C1169A /* LTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTableViewCell.h; sourceTree = "<group>"; };
 		D54F32821FFDC16400C1169A /* LTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTableViewCell.m; sourceTree = "<group>"; };
-		D5957A6D2005F1A000F6EE60 /* LModel+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LModel+WCTTableCoding.h"; sourceTree = "<group>"; };
 		D5957A7D20060A6E00F6EE60 /* LFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFont.h; sourceTree = "<group>"; };
 		D5957A7E20060A6E00F6EE60 /* LFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFont.m; sourceTree = "<group>"; };
 		D5957A7F20060A6E00F6EE60 /* LFontCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFontCell.h; sourceTree = "<group>"; };
 		D5957A8020060A6E00F6EE60 /* LFontCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFontCell.m; sourceTree = "<group>"; };
-		D5957A8120060A6E00F6EE60 /* LFontModel+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LFontModel+WCTTableCoding.h"; sourceTree = "<group>"; };
 		D5957A8220060A6E00F6EE60 /* LFontModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFontModel.h; sourceTree = "<group>"; };
-		D5957A8320060A6E00F6EE60 /* LFontModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LFontModel.mm; sourceTree = "<group>"; };
+		D5957A8320060A6E00F6EE60 /* LFontModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFontModel.m; sourceTree = "<group>"; };
 		D5957A8420060A6E00F6EE60 /* LFontTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFontTableView.h; sourceTree = "<group>"; };
 		D5957A8520060A6E00F6EE60 /* LFontTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFontTableView.m; sourceTree = "<group>"; };
 		D5957A8720060A6E00F6EE60 /* LNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNetwork.h; sourceTree = "<group>"; };
 		D5957A8820060A6E00F6EE60 /* LNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNetwork.m; sourceTree = "<group>"; };
-		D5957A8920060A6E00F6EE60 /* LRequest+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LRequest+WCTTableCoding.h"; sourceTree = "<group>"; };
 		D5957A8A20060A6E00F6EE60 /* LRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRequest.h; sourceTree = "<group>"; };
-		D5957A8B20060A6E00F6EE60 /* LRequest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LRequest.mm; sourceTree = "<group>"; };
-		D5957A8C20060A6E00F6EE60 /* LResponse+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LResponse+WCTTableCoding.h"; sourceTree = "<group>"; };
+		D5957A8B20060A6E00F6EE60 /* LRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRequest.m; sourceTree = "<group>"; };
 		D5957A8D20060A6E00F6EE60 /* LResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LResponse.h; sourceTree = "<group>"; };
-		D5957A8E20060A6E00F6EE60 /* LResponse.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LResponse.mm; sourceTree = "<group>"; };
-		D5957A9120060A6F00F6EE60 /* LSettingModel+WCTTableCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LSettingModel+WCTTableCoding.h"; sourceTree = "<group>"; };
+		D5957A8E20060A6E00F6EE60 /* LResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LResponse.m; sourceTree = "<group>"; };
 		D5957A9220060A6F00F6EE60 /* LSettingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSettingModel.h; sourceTree = "<group>"; };
-		D5957A9320060A6F00F6EE60 /* LSettingModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LSettingModel.mm; sourceTree = "<group>"; };
+		D5957A9320060A6F00F6EE60 /* LSettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSettingModel.m; sourceTree = "<group>"; };
 		D5957A9520060A6F00F6EE60 /* LSettingResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSettingResponse.h; sourceTree = "<group>"; };
 		D5957A9620060A6F00F6EE60 /* LSettingResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSettingResponse.m; sourceTree = "<group>"; };
 		D5957A9820060A6F00F6EE60 /* LSettingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSettingService.h; sourceTree = "<group>"; };
@@ -122,7 +114,6 @@
 		D5957A9C20060A6F00F6EE60 /* LSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSettingCell.m; sourceTree = "<group>"; };
 		D5957A9E20060A6F00F6EE60 /* LSettingVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSettingVM.h; sourceTree = "<group>"; };
 		D5957A9F20060A6F00F6EE60 /* LSettingVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSettingVM.m; sourceTree = "<group>"; };
-		D5957AAE2006151F00F6EE60 /* LDao+WCTTableCoding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LDao+WCTTableCoding.h"; sourceTree = "<group>"; };
 		D5AEAFAC1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+IdentifierAddition.h"; sourceTree = "<group>"; };
 		D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+IdentifierAddition.m"; sourceTree = "<group>"; };
 		D5AEAFB41FD03FA400AF2A4C /* LContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LContext.h; sourceTree = "<group>"; };
@@ -172,7 +163,7 @@
 		D5E99FBC1FFE21BA00679B3E /* TimerRetainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerRetainVC.m; sourceTree = "<group>"; };
 		D5ED12E82005AE600046C783 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D5ED12F92005B80C0046C783 /* LModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LModel.h; sourceTree = "<group>"; };
-		D5ED12FA2005B80C0046C783 /* LModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LModel.mm; sourceTree = "<group>"; };
+		D5ED12FA2005B80C0046C783 /* LModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LModel.m; sourceTree = "<group>"; };
 		D5FC202D1FCE9F0C0081AF72 /* LBaseClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBaseClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5FC20301FCE9F0C0081AF72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D5FC20331FCE9F0C0081AF72 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -276,16 +267,6 @@
 			path = LCache;
 			sourceTree = "<group>";
 		};
-		D548946E1FF0941F00F2019B /* LDao */ = {
-			isa = PBXGroup;
-			children = (
-				D54894721FF0945E00F2019B /* LDao.h */,
-				D54894731FF0945E00F2019B /* LDao.mm */,
-				D5957AAE2006151F00F6EE60 /* LDao+WCTTableCoding.h */,
-			);
-			path = LDao;
-			sourceTree = "<group>";
-		};
 		D54894A51FF1F9EE00F2019B /* LLanguage */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,8 +284,7 @@
 				D5957A7F20060A6E00F6EE60 /* LFontCell.h */,
 				D5957A8020060A6E00F6EE60 /* LFontCell.m */,
 				D5957A8220060A6E00F6EE60 /* LFontModel.h */,
-				D5957A8320060A6E00F6EE60 /* LFontModel.mm */,
-				D5957A8120060A6E00F6EE60 /* LFontModel+WCTTableCoding.h */,
+				D5957A8320060A6E00F6EE60 /* LFontModel.m */,
 				D5957A8420060A6E00F6EE60 /* LFontTableView.h */,
 				D5957A8520060A6E00F6EE60 /* LFontTableView.m */,
 			);
@@ -317,11 +297,9 @@
 				D5957A8720060A6E00F6EE60 /* LNetwork.h */,
 				D5957A8820060A6E00F6EE60 /* LNetwork.m */,
 				D5957A8A20060A6E00F6EE60 /* LRequest.h */,
-				D5957A8B20060A6E00F6EE60 /* LRequest.mm */,
-				D5957A8920060A6E00F6EE60 /* LRequest+WCTTableCoding.h */,
+				D5957A8B20060A6E00F6EE60 /* LRequest.m */,
 				D5957A8D20060A6E00F6EE60 /* LResponse.h */,
-				D5957A8E20060A6E00F6EE60 /* LResponse.mm */,
-				D5957A8C20060A6E00F6EE60 /* LResponse+WCTTableCoding.h */,
+				D5957A8E20060A6E00F6EE60 /* LResponse.m */,
 			);
 			path = LNetwork;
 			sourceTree = "<group>";
@@ -342,8 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				D5957A9220060A6F00F6EE60 /* LSettingModel.h */,
-				D5957A9320060A6F00F6EE60 /* LSettingModel.mm */,
-				D5957A9120060A6F00F6EE60 /* LSettingModel+WCTTableCoding.h */,
+				D5957A9320060A6F00F6EE60 /* LSettingModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -511,7 +488,6 @@
 				D5B95700200464B900F70A00 /* LCmd */,
 				D5AEAFB31FD03F9000AF2A4C /* LContext */,
 				D5FC20511FCE9FA10081AF72 /* LController */,
-				D548946E1FF0941F00F2019B /* LDao */,
 				D5957A7C20060A6E00F6EE60 /* LFont */,
 				D54894A51FF1F9EE00F2019B /* LLanguage */,
 				D5FC20521FCE9FA10081AF72 /* LModel */,
@@ -546,8 +522,7 @@
 			isa = PBXGroup;
 			children = (
 				D5ED12F92005B80C0046C783 /* LModel.h */,
-				D5ED12FA2005B80C0046C783 /* LModel.mm */,
-				D5957A6D2005F1A000F6EE60 /* LModel+WCTTableCoding.h */,
+				D5ED12FA2005B80C0046C783 /* LModel.m */,
 				D5FC20691FCEA1930081AF72 /* LObject.h */,
 				D5FC206A1FCEA1930081AF72 /* LObject.m */,
 			);
@@ -716,7 +691,7 @@
 				D5957AA420060A6F00F6EE60 /* LNetwork.m in Sources */,
 				D503884E1FE4CE9E00BA6487 /* LWebView.m in Sources */,
 				D5957AAB20060A6F00F6EE60 /* LSettingVM.m in Sources */,
-				D5957AA620060A6F00F6EE60 /* LResponse.mm in Sources */,
+				D5957AA620060A6F00F6EE60 /* LResponse.m in Sources */,
 				D54894711FF0945100F2019B /* LCache.m in Sources */,
 				D5FC20681FCEA1680081AF72 /* LNavigationController.m in Sources */,
 				D5DB07421FEA619900A347B1 /* NSData+Hex.m in Sources */,
@@ -724,8 +699,7 @@
 				D5FC205A1FCE9FA10081AF72 /* LButton.m in Sources */,
 				D5FC205B1FCE9FA10081AF72 /* LLabel.m in Sources */,
 				D5DB07381FEA599300A347B1 /* NSString+MD5.m in Sources */,
-				D54894741FF0945E00F2019B /* LDao.mm in Sources */,
-				D5ED12FB2005B80C0046C783 /* LModel.mm in Sources */,
+				D5ED12FB2005B80C0046C783 /* LModel.m in Sources */,
 				D5957AA320060A6F00F6EE60 /* LFontTableView.m in Sources */,
 				D5DE27EF1FCFAEC3004BC8F8 /* LTextField.m in Sources */,
 				D5FC205F1FCE9FFA0081AF72 /* LViewController.m in Sources */,
@@ -733,12 +707,12 @@
 				D5957AA020060A6F00F6EE60 /* LFont.m in Sources */,
 				D5957AAA20060A6F00F6EE60 /* LSettingCell.m in Sources */,
 				D5E136D81FEB5B5800581313 /* UIViewController+Category.m in Sources */,
-				D5957AA220060A6F00F6EE60 /* LFontModel.mm in Sources */,
+				D5957AA220060A6F00F6EE60 /* LFontModel.m in Sources */,
 				D5ED12E92005AE600046C783 /* AppDelegate.m in Sources */,
 				D5FC20351FCE9F0C0081AF72 /* ViewController.m in Sources */,
 				D5FC20621FCEA0860081AF72 /* LTableViewController.m in Sources */,
 				D54894771FF0946B00F2019B /* LService.m in Sources */,
-				D5957AA720060A6F00F6EE60 /* LSettingModel.mm in Sources */,
+				D5957AA720060A6F00F6EE60 /* LSettingModel.m in Sources */,
 				D50388491FE3D84A00BA6487 /* UIColor+Category.m in Sources */,
 				D5957AA120060A6F00F6EE60 /* LFontCell.m in Sources */,
 				D5FC205C1FCE9FA10081AF72 /* LView.m in Sources */,
@@ -752,7 +726,7 @@
 				D5E136E81FEB9D1500581313 /* NSString+Parser.m in Sources */,
 				D5FC20401FCE9F0C0081AF72 /* main.m in Sources */,
 				D5957AA820060A6F00F6EE60 /* LSettingResponse.m in Sources */,
-				D5957AA520060A6F00F6EE60 /* LRequest.mm in Sources */,
+				D5957AA520060A6F00F6EE60 /* LRequest.m in Sources */,
 				D5DE27FB1FCFAFA6004BC8F8 /* LScrollView.m in Sources */,
 				D5957AA920060A6F00F6EE60 /* LSettingService.m in Sources */,
 				D5E99FBD1FFE21BA00679B3E /* TimerRetainVC.m in Sources */,

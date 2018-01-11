@@ -7,7 +7,6 @@
 //
 
 #import "LResponse.h"
-#import "LResponse+WCTTableCoding.h"
 
 @implementation LResponse
 

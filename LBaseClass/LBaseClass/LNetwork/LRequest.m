@@ -9,7 +9,6 @@
 #import "LRequest.h"
 #import "LApp.h"
 #import "UIDevice+IdentifierAddition.h"
-#import "LRequest+WCTTableCoding.h"
 
 @implementation LRequest
 

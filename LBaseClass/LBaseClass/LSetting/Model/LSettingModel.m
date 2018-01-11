@@ -7,7 +7,6 @@
 //
 
 #import "LSettingModel.h"
-#import "LSettingModel+WCTTableCoding.h"
 
 @implementation LSettingModel
 
