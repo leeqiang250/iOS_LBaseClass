@@ -6,9 +6,9 @@
 //  Copyright © 2017年 liqiang. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "LObject.h"
 
-@interface LAppInfo : NSObject
+@interface LAppInfo : LObject
 
 /**
  包ID
