@@ -43,6 +43,10 @@
 #import "LViewController.h"
 
 
+//--------------------LFile--------------------
+#import "LFile.h"
+
+
 //--------------------LFont--------------------
 #import "LFont.h"
 #import "LFontTableView.h"
