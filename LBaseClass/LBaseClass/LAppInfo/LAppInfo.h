@@ -1,5 +1,5 @@
 //
-//  LApp.h
+//  LAppInfo.h
 //  LBaseClass
 //
 //  Created by liqiang on 2017/12/20.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LApp : NSObject
+@interface LAppInfo : NSObject
 
 /**
  包ID
