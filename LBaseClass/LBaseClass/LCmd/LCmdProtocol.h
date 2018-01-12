@@ -47,7 +47,7 @@
 - (RACSignal *)execute:(LCmdTransfer *)transfer;
 
 /**
- 命令处理中心，外部不调用
+ 命令处理中心，外部不调用，子类处理
  */
 - (RACDisposable *)cmdHandle:(LCmdTransfer *)transfer subscriber:(id<RACSubscriber>)subscriber;
 
