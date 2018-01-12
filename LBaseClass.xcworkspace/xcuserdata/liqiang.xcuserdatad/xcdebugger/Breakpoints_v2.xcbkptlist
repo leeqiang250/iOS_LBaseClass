@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LBaseClass/LBaseClass/LModel/LObject.m"
-            timestampString = "537264188.438646"
+            timestampString = "537420566.498366"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "85"
@@ -104,7 +104,7 @@
                   moduleName = "LBaseClass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LService/LService.m"
-                  timestampString = "537268431.733534"
+                  timestampString = "537420566.733477"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "60"
@@ -119,7 +119,7 @@
                   moduleName = "LBaseClass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LService/LService.m"
-                  timestampString = "537268431.735042"
+                  timestampString = "537420566.735088"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "60"
@@ -174,6 +174,22 @@
             startingLineNumber = "22"
             endingLineNumber = "22"
             landmarkName = "-dd"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LBaseClass/AppDelegate.m"
+            timestampString = "537420566.4987071"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "-application:didFinishLaunchingWithOptions:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

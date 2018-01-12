@@ -53,6 +53,8 @@
 		D5E4EEA51FCEC8DD00211899 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D5E4EEA21FCEC8DC00211899 /* README.md */; };
 		D5E4EEA61FCEC8DD00211899 /* LBaseClass.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D5E4EEA31FCEC8DC00211899 /* LBaseClass.podspec */; };
 		D5E4EEA71FCEC8DD00211899 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D5E4EEA41FCEC8DC00211899 /* LICENSE */; };
+		D5E610C020085DEF003C847A /* LDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E610BF20085DEF003C847A /* LDeviceInfo.m */; };
+		D5E610C42008612D003C847A /* LSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E610C32008612D003C847A /* LSystemInfo.m */; };
 		D5E99FBD1FFE21BA00679B3E /* TimerRetainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E99FBC1FFE21BA00679B3E /* TimerRetainVC.m */; };
 		D5ED12E92005AE600046C783 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ED12E82005AE600046C783 /* AppDelegate.m */; };
 		D5ED12FB2005B80C0046C783 /* LModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5ED12FA2005B80C0046C783 /* LModel.m */; };
@@ -162,6 +164,10 @@
 		D5E4EEA21FCEC8DC00211899 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D5E4EEA31FCEC8DC00211899 /* LBaseClass.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LBaseClass.podspec; sourceTree = "<group>"; };
 		D5E4EEA41FCEC8DC00211899 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D5E610BE20085DEF003C847A /* LDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDeviceInfo.h; sourceTree = "<group>"; };
+		D5E610BF20085DEF003C847A /* LDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDeviceInfo.m; sourceTree = "<group>"; };
+		D5E610C22008612D003C847A /* LSystemInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSystemInfo.h; sourceTree = "<group>"; };
+		D5E610C32008612D003C847A /* LSystemInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSystemInfo.m; sourceTree = "<group>"; };
 		D5E99FBB1FFE21BA00679B3E /* TimerRetainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerRetainVC.h; sourceTree = "<group>"; };
 		D5E99FBC1FFE21BA00679B3E /* TimerRetainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerRetainVC.m; sourceTree = "<group>"; };
 		D5ED12E82005AE600046C783 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -450,6 +456,24 @@
 			path = LResource;
 			sourceTree = "<group>";
 		};
+		D5E610BD20085DDF003C847A /* LDeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D5E610BE20085DEF003C847A /* LDeviceInfo.h */,
+				D5E610BF20085DEF003C847A /* LDeviceInfo.m */,
+			);
+			path = LDeviceInfo;
+			sourceTree = "<group>";
+		};
+		D5E610C120086112003C847A /* LSystemInfo */ = {
+			isa = PBXGroup;
+			children = (
+				D5E610C22008612D003C847A /* LSystemInfo.h */,
+				D5E610C32008612D003C847A /* LSystemInfo.m */,
+			);
+			path = LSystemInfo;
+			sourceTree = "<group>";
+		};
 		D5FC20241FCE9F0C0081AF72 = {
 			isa = PBXGroup;
 			children = (
@@ -500,6 +524,7 @@
 				D5B95700200464B900F70A00 /* LCmd */,
 				D5AEAFB31FD03F9000AF2A4C /* LContext */,
 				D5FC20511FCE9FA10081AF72 /* LController */,
+				D5E610BD20085DDF003C847A /* LDeviceInfo */,
 				D5957B0820074E8500F6EE60 /* LFile */,
 				D5957A7C20060A6E00F6EE60 /* LFont */,
 				D54894A51FF1F9EE00F2019B /* LLanguage */,
@@ -510,6 +535,7 @@
 				D548946C1FF0941F00F2019B /* LService */,
 				D5957A8F20060A6F00F6EE60 /* LSetting */,
 				D5AEAFAF1FD03C2B00AF2A4C /* LSingleton */,
+				D5E610C120086112003C847A /* LSystemInfo */,
 				D5FC20531FCE9FA10081AF72 /* LView */,
 				D53600542003524A00A46722 /* LViewModel */,
 			);
@@ -711,6 +737,7 @@
 				D5DB07421FEA619900A347B1 /* NSData+Hex.m in Sources */,
 				D5B95704200464B900F70A00 /* LCmdTransfer.m in Sources */,
 				D5FC205A1FCE9FA10081AF72 /* LButton.m in Sources */,
+				D5E610C020085DEF003C847A /* LDeviceInfo.m in Sources */,
 				D5FC205B1FCE9FA10081AF72 /* LLabel.m in Sources */,
 				D5DB07381FEA599300A347B1 /* NSString+MD5.m in Sources */,
 				D5ED12FB2005B80C0046C783 /* LModel.m in Sources */,
@@ -732,6 +759,7 @@
 				D5FC205C1FCE9FA10081AF72 /* LView.m in Sources */,
 				D5957B0B20074E9500F6EE60 /* LFile.m in Sources */,
 				D5DE27EC1FCFAE48004BC8F8 /* LTableView.m in Sources */,
+				D5E610C42008612D003C847A /* LSystemInfo.m in Sources */,
 				D5E1372C1FECCF9300581313 /* NSObject+Category.m in Sources */,
 				D53600572003528700A46722 /* LViewModel.m in Sources */,
 				D5AEAFB61FD03FA400AF2A4C /* LContext.m in Sources */,
