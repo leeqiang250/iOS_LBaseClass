@@ -22,11 +22,6 @@
 		D5957AA420060A6F00F6EE60 /* LNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A8820060A6E00F6EE60 /* LNetwork.m */; };
 		D5957AA520060A6F00F6EE60 /* LRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A8B20060A6E00F6EE60 /* LRequest.m */; };
 		D5957AA620060A6F00F6EE60 /* LResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A8E20060A6E00F6EE60 /* LResponse.m */; };
-		D5957AA720060A6F00F6EE60 /* LSettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A9320060A6F00F6EE60 /* LSettingModel.m */; };
-		D5957AA820060A6F00F6EE60 /* LSettingResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A9620060A6F00F6EE60 /* LSettingResponse.m */; };
-		D5957AA920060A6F00F6EE60 /* LSettingService.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A9920060A6F00F6EE60 /* LSettingService.m */; };
-		D5957AAA20060A6F00F6EE60 /* LSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A9C20060A6F00F6EE60 /* LSettingCell.m */; };
-		D5957AAB20060A6F00F6EE60 /* LSettingVM.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A9F20060A6F00F6EE60 /* LSettingVM.m */; };
 		D5957AFE20073DB700F6EE60 /* LAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957AFD20073DB700F6EE60 /* LAppInfo.m */; };
 		D5957B0B20074E9500F6EE60 /* LFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957B0A20074E9500F6EE60 /* LFile.m */; };
 		D5AEAFAE1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */; };
@@ -107,16 +102,6 @@
 		D5957A8B20060A6E00F6EE60 /* LRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRequest.m; sourceTree = "<group>"; };
 		D5957A8D20060A6E00F6EE60 /* LResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LResponse.h; sourceTree = "<group>"; };
 		D5957A8E20060A6E00F6EE60 /* LResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LResponse.m; sourceTree = "<group>"; };
-		D5957A9220060A6F00F6EE60 /* LSettingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSettingModel.h; sourceTree = "<group>"; };
-		D5957A9320060A6F00F6EE60 /* LSettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSettingModel.m; sourceTree = "<group>"; };
-		D5957A9520060A6F00F6EE60 /* LSettingResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSettingResponse.h; sourceTree = "<group>"; };
-		D5957A9620060A6F00F6EE60 /* LSettingResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSettingResponse.m; sourceTree = "<group>"; };
-		D5957A9820060A6F00F6EE60 /* LSettingService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSettingService.h; sourceTree = "<group>"; };
-		D5957A9920060A6F00F6EE60 /* LSettingService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSettingService.m; sourceTree = "<group>"; };
-		D5957A9B20060A6F00F6EE60 /* LSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSettingCell.h; sourceTree = "<group>"; };
-		D5957A9C20060A6F00F6EE60 /* LSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSettingCell.m; sourceTree = "<group>"; };
-		D5957A9E20060A6F00F6EE60 /* LSettingVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSettingVM.h; sourceTree = "<group>"; };
-		D5957A9F20060A6F00F6EE60 /* LSettingVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSettingVM.m; sourceTree = "<group>"; };
 		D5957AFC20073DB700F6EE60 /* LAppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAppInfo.h; sourceTree = "<group>"; };
 		D5957AFD20073DB700F6EE60 /* LAppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAppInfo.m; sourceTree = "<group>"; };
 		D5957B0920074E9500F6EE60 /* LFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFile.h; sourceTree = "<group>"; };
@@ -313,63 +298,6 @@
 			path = LNetwork;
 			sourceTree = "<group>";
 		};
-		D5957A8F20060A6F00F6EE60 /* LSetting */ = {
-			isa = PBXGroup;
-			children = (
-				D5957A9020060A6F00F6EE60 /* Model */,
-				D5957A9420060A6F00F6EE60 /* Response */,
-				D5957A9720060A6F00F6EE60 /* Service */,
-				D5957A9A20060A6F00F6EE60 /* View */,
-				D5957A9D20060A6F00F6EE60 /* ViewModel */,
-			);
-			path = LSetting;
-			sourceTree = "<group>";
-		};
-		D5957A9020060A6F00F6EE60 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				D5957A9220060A6F00F6EE60 /* LSettingModel.h */,
-				D5957A9320060A6F00F6EE60 /* LSettingModel.m */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		D5957A9420060A6F00F6EE60 /* Response */ = {
-			isa = PBXGroup;
-			children = (
-				D5957A9520060A6F00F6EE60 /* LSettingResponse.h */,
-				D5957A9620060A6F00F6EE60 /* LSettingResponse.m */,
-			);
-			path = Response;
-			sourceTree = "<group>";
-		};
-		D5957A9720060A6F00F6EE60 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				D5957A9820060A6F00F6EE60 /* LSettingService.h */,
-				D5957A9920060A6F00F6EE60 /* LSettingService.m */,
-			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		D5957A9A20060A6F00F6EE60 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				D5957A9B20060A6F00F6EE60 /* LSettingCell.h */,
-				D5957A9C20060A6F00F6EE60 /* LSettingCell.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		D5957A9D20060A6F00F6EE60 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				D5957A9E20060A6F00F6EE60 /* LSettingVM.h */,
-				D5957A9F20060A6F00F6EE60 /* LSettingVM.m */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		D5957AFB20073DB700F6EE60 /* LAppInfo */ = {
 			isa = PBXGroup;
 			children = (
@@ -533,7 +461,6 @@
 				D5DE27FE1FCFC0FB004BC8F8 /* LProtocol */,
 				D5E136EF1FEBB50700581313 /* LResource */,
 				D548946C1FF0941F00F2019B /* LService */,
-				D5957A8F20060A6F00F6EE60 /* LSetting */,
 				D5AEAFAF1FD03C2B00AF2A4C /* LSingleton */,
 				D5E610C120086112003C847A /* LSystemInfo */,
 				D5FC20531FCE9FA10081AF72 /* LView */,
@@ -729,7 +656,6 @@
 				D5DB073B1FEA5A8200A347B1 /* NSString+Hex.m in Sources */,
 				D5957AA420060A6F00F6EE60 /* LNetwork.m in Sources */,
 				D503884E1FE4CE9E00BA6487 /* LWebView.m in Sources */,
-				D5957AAB20060A6F00F6EE60 /* LSettingVM.m in Sources */,
 				D5957AA620060A6F00F6EE60 /* LResponse.m in Sources */,
 				D54894711FF0945100F2019B /* LCache.m in Sources */,
 				D5FC20681FCEA1680081AF72 /* LNavigationController.m in Sources */,
@@ -746,14 +672,12 @@
 				D5FC205F1FCE9FFA0081AF72 /* LViewController.m in Sources */,
 				D54894A81FF1FA0000F2019B /* LLanguage.m in Sources */,
 				D5957AA020060A6F00F6EE60 /* LFont.m in Sources */,
-				D5957AAA20060A6F00F6EE60 /* LSettingCell.m in Sources */,
 				D5E136D81FEB5B5800581313 /* UIViewController+Category.m in Sources */,
 				D5957AA220060A6F00F6EE60 /* LFontModel.m in Sources */,
 				D5ED12E92005AE600046C783 /* AppDelegate.m in Sources */,
 				D5FC20351FCE9F0C0081AF72 /* ViewController.m in Sources */,
 				D5FC20621FCEA0860081AF72 /* LTableViewController.m in Sources */,
 				D54894771FF0946B00F2019B /* LService.m in Sources */,
-				D5957AA720060A6F00F6EE60 /* LSettingModel.m in Sources */,
 				D50388491FE3D84A00BA6487 /* UIColor+Category.m in Sources */,
 				D5957AA120060A6F00F6EE60 /* LFontCell.m in Sources */,
 				D5FC205C1FCE9FA10081AF72 /* LView.m in Sources */,
@@ -767,10 +691,8 @@
 				D5FC20651FCEA0BF0081AF72 /* LTabBarController.m in Sources */,
 				D5E136E81FEB9D1500581313 /* NSString+Parser.m in Sources */,
 				D5FC20401FCE9F0C0081AF72 /* main.m in Sources */,
-				D5957AA820060A6F00F6EE60 /* LSettingResponse.m in Sources */,
 				D5957AA520060A6F00F6EE60 /* LRequest.m in Sources */,
 				D5DE27FB1FCFAFA6004BC8F8 /* LScrollView.m in Sources */,
-				D5957AA920060A6F00F6EE60 /* LSettingService.m in Sources */,
 				D5E99FBD1FFE21BA00679B3E /* TimerRetainVC.m in Sources */,
 				D5DE27F21FCFAF23004BC8F8 /* LTabBar.m in Sources */,
 				D5FC20711FCEA1BE0081AF72 /* LImageView.m in Sources */,
