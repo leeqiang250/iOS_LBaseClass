@@ -19,6 +19,9 @@
 //}];
 //[service execute:[LCmdTransfer cmd:LCmdGetAll value:nil]];
 
+//子类实现该路由方法
+//- (RACDisposable *)cmdHandle:(LCmdTransfer *)transfer subscriber:(id<RACSubscriber>)subscriber;
+
 
 
 @protocol LCmdProtocol <NSObject>
