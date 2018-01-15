@@ -60,7 +60,7 @@ LCmd * const LCmdGetNextPage = @"LCmdGetNextPage";//下一页数据
     return [self.subject subscribeNext:^(id x) {
         LCmdTransfer * transfer = x;
         if ([transfer.cmd isEqualToString:cmd] && nextBlock) {
-            nextBlock(x);
+            nextBlock(transfer);
         }
     }];
 }
