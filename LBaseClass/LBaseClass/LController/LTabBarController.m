@@ -163,7 +163,7 @@
     NSMutableSet * keys = [[NSMutableSet alloc] init];
     
     for (NSString * key in propertyKeys) {
-        objc_property_t property = class_getProperty(aClass, [key UTF8String]);
+        objc_property_t property = class_getProperty(aClass, key.UTF8String);
         const char *attr = property_getAttributes(property);
         NSString *strAttr = [NSString stringWithUTF8String:attr];
         
