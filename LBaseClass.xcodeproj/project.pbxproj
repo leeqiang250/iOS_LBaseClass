@@ -15,6 +15,7 @@
 		D54894771FF0946B00F2019B /* LService.m in Sources */ = {isa = PBXBuildFile; fileRef = D54894761FF0946B00F2019B /* LService.m */; };
 		D54894A81FF1FA0000F2019B /* LLanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = D54894A71FF1FA0000F2019B /* LLanguage.m */; };
 		D54F32831FFDC16400C1169A /* LTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D54F32821FFDC16400C1169A /* LTableViewCell.m */; };
+		D592E1AD2011CED7009B5DF5 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D592E1AC2011CED7009B5DF5 /* UIView+Category.m */; };
 		D5957AA020060A6F00F6EE60 /* LFont.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A7E20060A6E00F6EE60 /* LFont.m */; };
 		D5957AA120060A6F00F6EE60 /* LFontCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A8020060A6E00F6EE60 /* LFontCell.m */; };
 		D5957AA220060A6F00F6EE60 /* LFontModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D5957A8320060A6E00F6EE60 /* LFontModel.m */; };
@@ -88,6 +89,8 @@
 		D54894A71FF1FA0000F2019B /* LLanguage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLanguage.m; sourceTree = "<group>"; };
 		D54F32811FFDC16400C1169A /* LTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTableViewCell.h; sourceTree = "<group>"; };
 		D54F32821FFDC16400C1169A /* LTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTableViewCell.m; sourceTree = "<group>"; };
+		D592E1AB2011CED7009B5DF5 /* UIView+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		D592E1AC2011CED7009B5DF5 /* UIView+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 		D5957A7D20060A6E00F6EE60 /* LFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFont.h; sourceTree = "<group>"; };
 		D5957A7E20060A6E00F6EE60 /* LFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFont.m; sourceTree = "<group>"; };
 		D5957A7F20060A6E00F6EE60 /* LFontCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFontCell.h; sourceTree = "<group>"; };
@@ -370,6 +373,8 @@
 				D50388481FE3D84A00BA6487 /* UIColor+Category.m */,
 				D5AEAFAC1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.h */,
 				D5AEAFAD1FD03AA100AF2A4C /* UIDevice+IdentifierAddition.m */,
+				D592E1AB2011CED7009B5DF5 /* UIView+Category.h */,
+				D592E1AC2011CED7009B5DF5 /* UIView+Category.m */,
 				D5E136D61FEB5B5800581313 /* UIViewController+Category.h */,
 				D5E136D71FEB5B5800581313 /* UIViewController+Category.m */,
 			);
@@ -655,6 +660,7 @@
 			files = (
 				D5DB073B1FEA5A8200A347B1 /* NSString+Hex.m in Sources */,
 				D5957AA420060A6F00F6EE60 /* LNetwork.m in Sources */,
+				D592E1AD2011CED7009B5DF5 /* UIView+Category.m in Sources */,
 				D503884E1FE4CE9E00BA6487 /* LWebView.m in Sources */,
 				D5957AA620060A6F00F6EE60 /* LResponse.m in Sources */,
 				D54894711FF0945100F2019B /* LCache.m in Sources */,
