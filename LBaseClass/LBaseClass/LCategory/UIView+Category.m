@@ -23,7 +23,7 @@
     _logBlue(@"%@%@", pre, NSStringFromClass(self.class));
     
     for (UIView * temp in self.subviews) {
-        [self printViewTreeWithPre:[pre stringByAppendingString:@"  |"]];
+        [temp printViewTreeWithPre:[pre stringByAppendingString:@"  |"]];
     }
 }
 
