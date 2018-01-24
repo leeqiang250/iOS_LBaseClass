@@ -20,7 +20,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [LSystemInfo higheriOS9];
+//    [[UIColor grayColor] alpha:0.3];
+//    [[UIColor colorWithRed:125.0f / 255.0f green:125.0f / 255.0f blue:125.0f / 255.0f alpha:0.5f] alpha:0.7];
+    [[UIColor grayColor] isDark];
+    [[UIColor colorWithRed:125.0f / 255.0f green:125.0f / 255.0f blue:125.0f / 255.0f alpha:0.5f] isDark];
     
     return YES;
 }
