@@ -25,9 +25,9 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     {//测试字体大小
-        //LFontTableView * tb = [[LFontTableView alloc] initWithFrame:self.view.bounds];
-        //[tb reloadData];
-        //[self.view addSubview:tb];
+        LFontTableView * tb = [[LFontTableView alloc] initWithFrame:self.view.bounds];
+        [tb reloadData];
+        [self.view addSubview:tb];
     }
     {//测试Timer循环引用
         //dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

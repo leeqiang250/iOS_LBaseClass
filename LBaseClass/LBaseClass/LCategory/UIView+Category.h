@@ -15,4 +15,6 @@
  */
 - (void)printViewTree;
 
+- (UIView *)findSubViewByClass:(Class)aClass;
+
 @end

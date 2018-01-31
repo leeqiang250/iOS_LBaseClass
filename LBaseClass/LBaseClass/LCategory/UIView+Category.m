@@ -17,6 +17,17 @@
     [self printViewTreeWithPre:@""];
 }
 
+- (UIView *)findSubViewByClass:(Class)aClass {
+    if ([self isKindOfClass:aClass]) {
+        return self;
+    }
+    for (UIView * subview in self.subviews) {
+        return [subview findSubViewByClass:aClass];
+    }
+    
+    return nil;
+}
+
 #pragma mark - Private
 
 - (void)printViewTreeWithPre:(NSString *)pre{
