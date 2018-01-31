@@ -22,7 +22,10 @@
         return self;
     }
     for (UIView * subview in self.subviews) {
-        return [subview findSubViewByClass:aClass];
+        UIView * targetview = [subview findSubViewByClass:aClass];
+        if (targetview) {
+            return targetview;
+        }
     }
     
     return nil;
