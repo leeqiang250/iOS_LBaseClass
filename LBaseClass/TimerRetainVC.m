@@ -41,11 +41,11 @@
 }
 
 - (void)dealloc {
-    _logImport();
+    //_logImport();
 }
 
 - (void)tick:(NSTimer *)sender {
-    _logImport();
+    //_logImport();
 }
 
 @end

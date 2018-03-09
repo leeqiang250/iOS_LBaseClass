@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NSString+Parser.h"
 #import "LInitProtocol.h"
 
 @interface LTextField : UITextField<LInitProtocol>

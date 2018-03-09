@@ -25,6 +25,4 @@
  */
 + (NSString *)CFBundleVersion;
 
-
-
 @end

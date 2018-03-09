@@ -44,13 +44,11 @@
 
 - (NSString *)description {
     _logRetainCount(self);
-    
-    return [NSString stringWithFormat:@"class:%@__uid:%@__createTime:%f", self.class, self.uid, self.createTime];
+    return [NSString stringWithFormat:@"%@:%@", self.class, [NSString isNullOrEmpty:self.uid] ? @"" : self.uid];
 }
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    
     _logImport();
 }
 
@@ -68,7 +66,7 @@
     }
     
     self.uid = [NSUUID UUID].UUIDString;
-    self.createTime = [[NSDate date] timeIntervalSince1970];    
+    self.createTime = [[NSDate date] timeIntervalSince1970];
     //});
 }
 

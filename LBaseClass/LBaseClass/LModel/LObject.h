@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSString+Parser.h"
 #import <UIKit/UIKit.h>
 #import "LInitProtocol.h"
 #import "LReflectProtocol.h"

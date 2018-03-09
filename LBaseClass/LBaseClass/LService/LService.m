@@ -7,7 +7,6 @@
 //
 
 #import "LService.h"
-#import "NSString+Parser.h"
 
 
 LCmd * const LCmdGetAll = @"LCmdGetAll";//全部数据

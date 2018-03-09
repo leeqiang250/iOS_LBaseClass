@@ -7,6 +7,7 @@
 //
 
 #import <WebKit/WebKit.h>
+#import "NSString+Parser.h"
 #import "LInitProtocol.h"
 
 @interface LWebView : WKWebView

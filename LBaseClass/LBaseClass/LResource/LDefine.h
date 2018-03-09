@@ -16,31 +16,33 @@
 #define XCODE_COLORS_RESET_BG XCODE_COLORS_ESCAPE @"bg;" // Clear any background color
 #define XCODE_COLORS_RESET XCODE_COLORS_ESCAPE @";" // Clear any foreground or background color
 
-//#ifdef DEBUG
-//
-////红色
-//#define _logRed(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,0,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__);
-////绿色
-//#define _logGreen(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,255,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__);
-////蓝色
-//#define _logBlue(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,0,255;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__);
-////黄色
-//#define _logYellow(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,255,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__);
-////黑色
-//#define _logBlack(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,0,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__);
-////信息
-//#define _logInfo(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,0,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__);
-////重要
-//#define _logImport(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,0,255;" @"%@:%@:%d:" frmt XCODE_COLORS_RESET), NSStringFromClass(self.class), NSStringFromSelector(_cmd), __LINE__, ##__VA_ARGS__);
-////警告
-//#define _logWarn(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,255,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__);
-////错误
-//#define _logError(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,0,0;" @"%@:%@:%d:" frmt XCODE_COLORS_RESET), NSStringFromClass(self.class), NSStringFromSelector(_cmd), __LINE__, ##__VA_ARGS__);
-//
-////输出引用计数
-//#define _logRetainCount(obj) _logBlue(@"RetainCount:%@:%ld", obj == nil ? @"nil" : NSStringFromClass([obj class]), obj == nil ? -100 : CFGetRetainCount((__bridge CFTypeRef)obj));
-//
-//#else
+#ifdef DEBUG
+
+//红色
+#define _logRed(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,0,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__);
+//绿色
+#define _logGreen(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,255,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__);
+//蓝色
+#define _logBlue(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,0,255;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__);
+//黄色
+#define _logYellow(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,255,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__);
+//黑色
+#define _logBlack(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,0,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__);
+//信息
+#define _logInfo(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,0,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__);
+//重要
+#define _logImport(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg0,0,255;" @"%@:%@:%d:%@:" frmt XCODE_COLORS_RESET), NSStringFromClass(self.class), NSStringFromSelector(_cmd), __LINE__, [NSString isNullOrEmpty:self.uid] ? @"" : self.uid, ##__VA_ARGS__);
+//警告
+#define _logWarn(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,255,0;" frmt XCODE_COLORS_RESET), ##__VA_ARGS__);
+//错误
+#define _logError(frmt, ...) NSLog((XCODE_COLORS_ESCAPE @"fg255,0,0;" @"%@:%@:%d:" frmt XCODE_COLORS_RESET), NSStringFromClass(self.class), NSStringFromSelector(_cmd), __LINE__, ##__VA_ARGS__);
+
+
+
+//输出引用计数
+#define _logRetainCount(obj) _logBlue(@"RetainCount:%@:%ld", obj == nil ? @"nil" : NSStringFromClass([obj class]), obj == nil ? -100 : CFGetRetainCount((__bridge CFTypeRef)obj));
+
+#else
 
 //红色
 #define _logRed(frmt, ...) nil;
@@ -64,7 +66,7 @@
 //输出引用计数
 #define _logRetainCount(obj) nil;
 
-//#endif
+#endif
 
 
 
