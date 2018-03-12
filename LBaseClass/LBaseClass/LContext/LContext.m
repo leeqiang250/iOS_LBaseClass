@@ -12,4 +12,16 @@
 
 #pragma mark - Interface
 
+//LSingleton_m(LContext);
+//
+//- (void)initialize {
+//    [super initialize];
+//    
+//#ifdef DEBUG
+//    self.openLog = YES;
+//#else
+//    self.openLog = NO;
+//#endif
+//}
+
 @end

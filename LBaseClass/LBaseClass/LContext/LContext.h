@@ -12,4 +12,8 @@
 
 @interface LContext : LObject
 
+//LSingleton_h(LContext);
+//
+//@property (nonatomic, assign) BOOL openLog;
+
 @end
