@@ -13,7 +13,7 @@
 #pragma mark - Interface
 
 + (BOOL)isNullOrEmpty:(NSString *)string {
-    return [string isEqual:[NSNull null]] || string.length == 0;
+    return [string isEqual:[NSNull null]] || ![string isKindOfClass:NSString.class] || string.length == 0;
 }
 
 @end

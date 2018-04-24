@@ -88,12 +88,12 @@
                   moduleName = "LBaseClass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LService/LService.m"
-                  timestampString = "542283073.45722"
+                  timestampString = "546251056.250283"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "59"
                   endingLineNumber = "59"
-                  offsetFromSymbolStart = "50">
+                  offsetFromSymbolStart = "92">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -103,12 +103,27 @@
                   moduleName = "LBaseClass"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LService/LService.m"
-                  timestampString = "542283073.460649"
+                  timestampString = "546251056.2549829"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "59"
                   endingLineNumber = "59"
-                  offsetFromSymbolStart = "12">
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__destroy_helper_block_.35"
+                  moduleName = "LBaseClass"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/liqiang/Documents/GitHub/iOS_LBaseClass/LBaseClass/LBaseClass/LService/LService.m"
+                  timestampString = "546251056.25885"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "20">
                </Location>
             </Locations>
          </BreakpointContent>

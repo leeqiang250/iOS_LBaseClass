@@ -14,7 +14,7 @@
 #pragma mark - Interface
 
 - (NSString *)toHex {
-    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding];
+    NSData * data = [self dataUsingEncoding:NSUTF8StringEncoding];
     
     return [data toHex];
 }
